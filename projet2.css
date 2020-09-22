@@ -173,3 +173,44 @@ nav a:hover{
 section{
     display: flex;
 }
+
+/*Activités à Marseille*/
+
+#activite_marseille{
+    display: flex;
+}
+
+/*images "activités à Marseille"*/
+
+#grande_image_et_grande_banniere{
+    margin-left: 5em;
+    margin-right: 2em;
+}
+
+#grande_image{
+    width: 25em;
+    height: 40em;
+    border-radius: 20px 20px 0px 0px;
+}
+
+#petite_image_et_petite_banniere{
+    margin-left: 3em;
+}
+
+#petite_image{
+    width: 22em;
+    height: 17.5em;
+    border-radius: 20px 20px 0px 0px;   
+}
+
+#banniere_grande_image, #banniere_petite_image{
+    padding-left: 11px;
+    font-size: 0.8em;
+}
+
+#petite_image_et_petite_banniere, #grande_image_et_grande_banniere{
+    margin-top: 3em;    
+    margin-bottom: 35px;
+    border-radius: 20px 20px 20px 20px;
+    box-shadow: 0px 5px 5px;
+}
