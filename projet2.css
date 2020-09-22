@@ -1,0 +1,45 @@
+body{
+    margin: 0px;
+    padding: 0px;
+}
+
+/*header*/
+
+header{
+    display: flex;
+    justify-content: space-between;
+}
+
+
+#reservia{
+    width: 14em;
+    height: 7em;
+}
+
+/*nav*/
+
+nav{
+    padding-top: 0.6em;
+}
+
+nav ul{
+    list-style-type: none;
+    display: flex;
+}
+
+nav li{
+    margin-right: 5em;
+}
+
+nav a{
+    font-size: 1.3em;
+    color: #0065FC;
+    padding-top: 21px;
+    text-decoration: none;
+}
+
+nav a:hover{
+    color: #0065FC;
+    border-top: 5px solid #0065FC;
+}
+
