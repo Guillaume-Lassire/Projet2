@@ -43,3 +43,46 @@ nav a:hover{
     border-top: 5px solid #0065FC;
 }
 
+/*en-tete*/
+#en_tete{
+    margin-left: 1em;
+}
+
+#filtre{
+    display: flex;
+    padding-top: 1em;
+}
+
+#svg{
+    width: 2em;
+    height: 2em;
+    padding: 1em;
+    border-radius: 30px;
+    background-color: #f2f2f2;
+}
+
+#aide{
+    display: flex;
+    margin-left: 5em;
+    height: 4em;
+    border-radius: 40px;
+    border: 5px #f2f2f2 solid;
+}
+
+#ecriture{
+    padding-left: 0.5em;
+    padding-right: 0.5em;
+}
+
+/*info*/
+
+#info_aide{
+    display: flex;
+    padding-top: 2em;
+}
+
+#info{
+    width: 1.5em;
+    height: 1.5em;
+    padding: 0.9em;
+}
