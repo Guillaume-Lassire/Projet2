@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+
+<html lang="fr-FR">
+
+    <head>
+
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="Projet2.css"/>
+        <title>Reservia</title>
+
+    </head>
+
+    <header>
+
+        <div id="logo">
+            <img id="reservia" src="Projet 2 - Reservia/images/logo/Reservia@3x.png">
+
+        </div>
+
+        <nav>
+            <ul>
+                <li><a href="#">Hébergements</a></li>
+                <li><a href="#">Activités</a></li>
+                <li><a href="#">S'inscrire</a></li>
+            </ul>
+        </nav>
+
+    </header>
+
+    <body>
+
+        <article id="en_tete">
+
+            <h1>Trouvez votre hébergement pour des vacances de rêve</h1>
+            <p>En plein centre ville ou en pleine nature</p>
+
+            <div id="filtre">
+                <h2>Filtres</h2>
+
+                <div id="aide">
+                    <svg id="svg" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="money-bill-wave" class="svg-inline--fa fa-money-bill-wave fa-w-20" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512"><path fill="currentColor" d="M621.16 54.46C582.37 38.19 543.55 32 504.75 32c-123.17-.01-246.33 62.34-369.5 62.34-30.89 0-61.76-3.92-92.65-13.72-3.47-1.1-6.95-1.62-10.35-1.62C15.04 79 0 92.32 0 110.81v317.26c0 12.63 7.23 24.6 18.84 29.46C57.63 473.81 96.45 480 135.25 480c123.17 0 246.34-62.35 369.51-62.35 30.89 0 61.76 3.92 92.65 13.72 3.47 1.1 6.95 1.62 10.35 1.62 17.21 0 32.25-13.32 32.25-31.81V83.93c-.01-12.64-7.24-24.6-18.85-29.47zM48 132.22c20.12 5.04 41.12 7.57 62.72 8.93C104.84 170.54 79 192.69 48 192.69v-60.47zm0 285v-47.78c34.37 0 62.18 27.27 63.71 61.4-22.53-1.81-43.59-6.31-63.71-13.62zM320 352c-44.19 0-80-42.99-80-96 0-53.02 35.82-96 80-96s80 42.98 80 96c0 53.03-35.83 96-80 96zm272 27.78c-17.52-4.39-35.71-6.85-54.32-8.44 5.87-26.08 27.5-45.88 54.32-49.28v57.72zm0-236.11c-30.89-3.91-54.86-29.7-55.81-61.55 19.54 2.17 38.09 6.23 55.81 12.66v48.89z"></path></svg>
+                    <h2 id="ecriture">Economique</h2>
+                </div>
+
+                <div id="aide">
+                    <svg id="svg" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="child" class="svg-inline--fa fa-child fa-w-12" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512"><path fill="currentColor" d="M120 72c0-39.765 32.235-72 72-72s72 32.235 72 72c0 39.764-32.235 72-72 72s-72-32.236-72-72zm254.627 1.373c-12.496-12.497-32.758-12.497-45.254 0L242.745 160H141.254L54.627 73.373c-12.496-12.497-32.758-12.497-45.254 0-12.497 12.497-12.497 32.758 0 45.255L104 213.254V480c0 17.673 14.327 32 32 32h16c17.673 0 32-14.327 32-32V368h16v112c0 17.673 14.327 32 32 32h16c17.673 0 32-14.327 32-32V213.254l94.627-94.627c12.497-12.497 12.497-32.757 0-45.254z"></path></svg>
+                    <h2 id="ecriture">familial</h2>
+                </div>
+
+                <div id="aide">
+                    <svg id="svg" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="heart" class="svg-inline--fa fa-heart fa-w-16" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="currentColor" d="M462.3 62.6C407.5 15.9 326 24.3 275.7 76.2L256 96.5l-19.7-20.3C186.1 24.3 104.5 15.9 49.7 62.6c-62.8 53.6-66.1 149.8-9.9 207.9l193.5 199.8c12.5 12.9 32.8 12.9 45.3 0l193.5-199.8c56.3-58.1 53-154.3-9.8-207.9z"></path></svg>
+                    <h2 id="ecriture">Romantique</h2>
+                </div>
+
+                <div id="aide">
+                    <svg id="svg" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="dog" class="svg-inline--fa fa-dog fa-w-18" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><path fill="currentColor" d="M298.06,224,448,277.55V496a16,16,0,0,1-16,16H368a16,16,0,0,1-16-16V384H192V496a16,16,0,0,1-16,16H112a16,16,0,0,1-16-16V282.09C58.84,268.84,32,233.66,32,192a32,32,0,0,1,64,0,32.06,32.06,0,0,0,32,32ZM544,112v32a64,64,0,0,1-64,64H448v35.58L320,197.87V48c0-14.25,17.22-21.39,27.31-11.31L374.59,64h53.63c10.91,0,23.75,7.92,28.62,17.69L464,96h64A16,16,0,0,1,544,112Zm-112,0a16,16,0,1,0-16,16A16,16,0,0,0,432,112Z"></path></svg>
+                    <h2 id="ecriture">Animaux autorisés</h2>
+                </div>
+            </div>
+
+            <div id="info_aide">
+                <svg id="info" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="info-circle" class="svg-inline--fa fa-info-circle fa-w-16" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="currentColor" d="M256 8C119.043 8 8 119.083 8 256c0 136.997 111.043 248 248 248s248-111.003 248-248C504 119.083 392.957 8 256 8zm0 110c23.196 0 42 18.804 42 42s-18.804 42-42 42-42-18.804-42-42 18.804-42 42-42zm56 254c0 6.627-5.373 12-12 12h-88c-6.627 0-12-5.373-12-12v-24c0-6.627 5.373-12 12-12h12v-64h-12c-6.627 0-12-5.373-12-12v-24c0-6.627 5.373-12 12-12h64c6.627 0 12 5.373 12 12v100h12c6.627 0 12 5.373 12 12v24z"></path></svg>
+                <p>Plus de 500 logements sont disponibles dans cette ville</p>
+            </div>
+
+        </article> 
+        
+
+        <section>
+            <article id="article">
+                <div id="hebergements">
+                    <h1>Hébergement à Marseille</h1>
+
+                    <div id="haut">
+
+                        <div id="ecart_haut">
+                            <img id="imgs" src="Projet 2 - Reservia/images/hebergements/4_small/marcus-loke-WQJvWU_HZFo-unsplash.jpg">
+                            <div id="banniere">
+                                <h2>Auberge de la Cannebière</h2>
+                                <p>Nuit à partir de <em>25€</em></p>
+                            </div>
+                        </div>
+
+                        <div id="ecart_haut">
+                            <img id="imgs" src="Projet 2 - Reservia/images/hebergements/4_small/fred-kleber-gTbaxaVLvsg-unsplash.jpg">
+                            <div id="banniere">
+                                <h2>Hôtel du port</h2>
+                                <p>Nuit à partir de <em>52€</em></p>
+                            </div>
+                        </div>
+
+                        <div id="ecart_haut">
+                            <img id="imgs" src="Projet 2 - Reservia/images/hebergements/4_small/reisetopia-B8WIgxA_PFU-unsplash.jpg">
+                            <div id="banniere">
+                                <h2>Hôtel Les mouettes</h2>
+                                <p>Nuit à partir de <em>76€</em></p>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <div id="bas">
+
+                        <div id="ecart_bas">
+                            <img id="imgs" src="Projet 2 - Reservia/images/hebergements/4_small/annie-spratt-Eg1qcIitAuA-unsplash.jpg">
+                            <div id="banniere">
+                                <h2>Auberge Le Panier</h2>
+                                <p>Nuit à partir de <em>23€</em></p>
+                            </div>
+                        </div>
+
+                        <div id="ecart_bas">
+                            <img id="imgs" src="Projet 2 - Reservia/images/hebergements/4_small/nicate-lee-kT-ZyaiwBe0-unsplash.jpg">
+                            <div id="banniere">
+                                <h2>Hôtel de la mer</h2>
+                                <p>Nuit à partir de <em>46€</em></p>
+                            </div>
+                        </div>
+
+                        <div id="ecart_bas">
+                            <img id="imgs" src="Projet 2 - Reservia/images/hebergements/4_small/febrian-zakaria-M6S1WvfW68A-unsplash.jpg">
+                            <div id="banniere">
+                                <h2>Hôtel chez Amina</h2>
+                                <p>Nuit à partir de <em>96€</em></p>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <h2>Afficher plus</h2>
+                </div>
+            </article>
+
+            <article id="aside">
+
+                <div id="populaire">
+                    <h1>Les plus populaire</h1>
+
+                    <div id="div_populaire">
+                        <img id="imgs_populaire" src="Projet 2 - Reservia/images/hebergements/4_small/emile-guillemot-Bj_rcSC5XfE-unsplash.jpg" alt="">
+                        <div id="banniere_populaire">
+                            <h2>Hôtel Le soleil du matin</h2>
+                            <p>Nuit à partir de <em>128€</em></p>
+                        </div>
+                    </div>
+
+                    <div id="div_populaire">
+                        <img id="imgs_populaire" src="Projet 2 - Reservia/images/hebergements/4_small/aw-creative-VGs8z60yT2c-unsplash.jpg" alt="" >
+                        <div id="banniere_populaire">
+                            <h2>Au coeur de l'eau Chambres d'hôtes</h2>
+                            <p>Nuit à partir de <em>71€</em></p>
+                        </div>
+                    </div>
+
+                    <div id="div_populaire">
+                        <img id="imgs_populaire" src="Projet 2 - Reservia/images/hebergements/4_small/febrian-zakaria-sjvU0THccQA-unsplash.jpg" alt="">
+                        <div id="banniere_populaire">
+                            <h2>Hôtel Tout bleu et Blanc</h2>
+                            <p>Nuit à partir de <em>68€</em></p>
+                        </div>
+                    </div>
+                </div>
+
+            </article>
+        </section>
+
+        <h2>Activités à Marseille</h2>
+            
+            <article id="activite_marseille">
+
+                <div id="grande_image_et_grande_banniere">
+                    <img id="grande_image" src="Projet 2 - Reservia/images/activites/3_medium/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg" alt="">
+                    <div id="banniere_grande_image">
+                        <h2>Vieux port</h2>
+                    </div>
+                </div>
+
+
+                <div>
+                    <div id="petite_image_et_petite_banniere">
+                        <img id="petite_image" src="Projet 2 - Reservia/images/activites/3_medium/paul-hermann-QFTrLdQIRhI-unsplash.jpg" alt="">
+                        <div id="banniere_petite_image">
+                            <h2>Fort de Pomègues</h2>
+                        </div>
+                    </div>
+
+                    <div id="petite_image_et_petite_banniere">
+                        <img id="petite_image" src="Projet 2 - Reservia/images/activites/3_medium/kevin-hikari-rV_Qd1l-VXg-unsplash.jpg" alt="">
+                        <div id="banniere_petite_image">
+                            <h2>Îles du frioul</h2>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div id="grande_image_et_grande_banniere">
+                    <img id="grande_image" src="Projet 2 - Reservia/images/activites/3_medium/kilyan-sockalingum-NR8-cBCN3aI-unsplash.jpg" alt="">
+                    <div id="banniere_grande_image">
+                        <h2>Parc national des Calanques</h2>
+                    </div>
+                </div>
+
+                <div>
+                    <div id="petite_image_et_petite_banniere">
+                        <img id="petite_image" src="Projet 2 - Reservia/images/activites/3_medium/florian-wehde-xW9e8gdotxI-unsplash.jpg" alt="">
+                        <div id="banniere_petite_image">
+                            <h2>Fort de Pomègues</h2>
+                        </div>
+                    </div>
+
+                    <div id="petite_image_et_petite_banniere">
+                        <img id="petite_image" src="Projet 2 - Reservia/images/activites/3_medium/lena-paulin-wH2-EJoDcV0-unsplash.jpg" alt="">
+                        <div id="banniere_petite_image">
+                            <h2>Îles du frioul</h2>
+                        </div>
+                    </div>
+
+                </div>
+
+            </article>
+
+            <footer>   
+                <div id="bas_de_page">
+                    <div id="a_propos">
+                        <h2>A propos</h2>
+                        <p>Fonctionnement du site</p>
+                        <p>Conditions générales de vente</p>
+                        <p>Données et confidentialité</p>
+                    </div>
+        
+                    <div id="nos_hebergements">
+                        <h2>Nos hébergements</h2>
+                        <p>Charte qualité</p>
+                        <p>Soumettre votre hôtel</p>
+                    </div>
+                    
+                    <div id="assistance">
+                        <h2>Assistance</h2>
+                        <p>Centre d'aide</p>
+                        <p>Nous contacter</p>
+                    </div>
+                </div>
+            </footer>
+
+    </body>
+
+</html>
