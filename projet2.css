@@ -3,6 +3,39 @@ body{
     padding: 0px;
 }
 
+/*écriture*/
+
+@font-face{
+    font-family: 'bold';
+    src: url('police/Raleway-Bold.ttf');
+}
+
+@font-face{
+    font-family: 'Extralight';
+    src: url('police/Raleway-ExtraLight.ttf');
+}
+
+@font-face{
+    font-family: 'light';
+    src: url('police/Raleway-Light.ttf');
+}
+
+@font-face{
+    font-family: 'medium';
+    src: url('police/Raleway-Medium.ttf');
+}
+
+h1{
+    font-family: 'bold';
+}
+
+h2{
+    font-family: 'medium';
+}
+
+p{
+    font-family: 'Extralight';
+}
 /*header*/
 
 header{
