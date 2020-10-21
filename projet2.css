@@ -25,22 +25,28 @@ body{
     src: url('police/Raleway-Medium.ttf');
 }
 
-h1, h3{
+h1{
     font-family: 'bold';
-    font-size: 20px;
+    font-size: 22px;
 }
 
 h2{
     font-family: 'bold';
+    font-size: 24px;
+}
+
+h3{
+    font-family: 'bold';
     font-size: 22px;
 }
+
 h4{
     font-family: 'medium';
     font-size: 17px;
 }
 
 p{
-    font-family: 'Extralight';
+    font-family: 'regular';
 }
 
 /*media queries desktop*/
@@ -51,9 +57,11 @@ p{
 /*header*/
 
 .reservia{
-    width: 14em;
-    height: 7em;
+    width: 8em;
+    height: 4em;
     margin-left: 3em;
+    padding-top: 2em;
+    padding-bottom: 2em;
 }
 
 /*nav*/
@@ -77,14 +85,16 @@ nav ul{
 }
 
 nav li{
-    margin-right: 3em;
-    margin-left: 2em;
+    margin-right: 2em;
+    margin-left: 1em;
 }
 
 nav a{
     font-size: 1.3em;
-    color: #0065FC;
+    color: grey;
     padding-top: 2.1em;
+    padding-right: 1em;
+    padding-left: 1em;
     text-decoration: none;
 }
 
@@ -93,7 +103,12 @@ nav a:hover{
     border-top: 5px solid #0065FC;
 }
 
+#inscrire{
+    color: #0065FC;
+}
+
 /*en-tete*/
+
 #en_tete{
     margin-left: 3em;
 }
@@ -106,9 +121,9 @@ nav a:hover{
 }
 
 #map_marker{
-    width: 1.3em;
-    height: 1.3em;
-    padding: 0.55em;
+    width: 1em;
+    height: 1em;
+    padding: 0.7em;
     margin-top: 0.98em;
     background-color: #f2f2f2;
     border-radius: 10px 0px 0px 10px;
@@ -146,10 +161,12 @@ label{
 
 .aide{
     display: flex;
-    margin-left: 5em;
+    margin-left: 3.5em;
     height: 4em;
     border-radius: 40px;
-    border: 5px #f2f2f2 solid;
+    border-top: 4px #f2f2f2 solid;
+    border-right: 4px #f2f2f2 solid;
+    border-bottom: 4px #f2f2f2 solid;
 }
 
 .aide:hover{
@@ -158,11 +175,13 @@ label{
 
 #aide_desktop{
     display: flex;
-    margin-left: 5em;
+    margin-left: 3.5em;
     min-width: 18em;
     height: 4em;
     border-radius: 40px;
-    border: 5px #f2f2f2 solid;
+    border-top: 4px #f2f2f2 solid;
+    border-right: 4px #f2f2f2 solid;
+    border-bottom: 4px #f2f2f2 solid;
 }
 
 #aide_desktop:hover{
@@ -170,17 +189,17 @@ label{
 }
 
 .svg{
-    width: 2em;
-    height: 2em;
-    padding: 1em;
+    width: 1.5em;
+    height: 1.5em;
+    padding: 1.25em;
     border-radius: 30px;
     color: #0065fc;
     background-color: #deebff;
 }
 
 .ecriture{
-    padding-left: 0.5em;
-    padding-right: 0.5em;
+    padding-left: 1em;
+    padding-right: 1.5em;
 }
 
 /*info*/
@@ -191,9 +210,14 @@ label{
 }
 
 #info{
-    width: 1.5em;
-    height: 1.5em;
-    padding: 0.9em;
+    width: 0.6em;
+    height: 0.6em;
+    padding: 0.3em;
+    margin-top: 0.8em;
+    margin-right: 0.5em;
+    color: #0065fc;
+    border-radius: 30px;
+    border: 2px #f2f2f2 solid;
 }
 
 /*arrière plan pour hébergement à marseille*/
@@ -207,35 +231,39 @@ label{
     padding:  2em 0em;
 }
 
-article h3{
-    margin-left: 2.5em;
+article h2{
+    margin-left: 2em;
+}
+
+#texte{
+    margin-left: 2.525em;
 }
 
 /*hébergement à marseille*/
 
 .imgs{
-    width: 18em;
+    width: 19em;
     height: 9em;
     border-radius: 20px 20px  0px 0px;
-    border-left: 9px white solid;
-    border-right: 9px white solid;
-    border-top: 9px white solid;
+    border-left: 6px white solid;
+    border-right: 6px white solid;
+    border-top: 6px white solid;
     object-fit: cover;
 }
 
 .ecart_haut, .ecart_bas{
     background-color:white;
     border-radius: 20px;
-    margin-left: 3.2em;
+    margin-left: 2.525em;
 }
 
 .ecart_haut{
-    margin-top: 1.5em;
+    margin-top: 1em;
     margin-bottom: 3em;
 }
 
 .ecart_bas{
-    margin-bottom: 2em;
+    margin-bottom: 3em;
 }
 
 .banniere{
@@ -283,10 +311,10 @@ article h3{
 }
 
 #chart{
-    width: 2.7em;
-    height: 2.7em;
-    margin-left: 20em;
-    margin-top: 0.5em;
+    width: 2em;
+    height: 2em;
+    margin-left: 19.5em;
+    margin-top: 1.5em;
 }
 
 .div_populaire{
@@ -334,66 +362,79 @@ section{
 }
 
 #ancre_activite{
-    padding-top: 1em;
-    margin-left: 3em;
+    padding-top: 2em;
+    margin-left: 2em;
 }
 
 /*images "activités à Marseille"*/
 
 .grande_image_et_grande_banniere{
-    margin-left: 3em;
-    margin-right: 3em;
+    margin-left: 2.25em;
+    margin-right: 2.25em;
 }
 
 .grande_image{
-    width: 25em;
-    height: 45.5em;
+    width: 26em;
+    height: 41.5em;
+    object-fit: cover;
+    border-radius: 20px 20px 0px 0px;
+}
+
+#grande_image_et_grande_banniere{
+    margin-left: 3em;
+    margin-right: 2.25em;
+}
+
+#grande_image{
+    width: 26em;
+    height: 41.5em;
     object-fit: cover;
     border-radius: 20px 20px 0px 0px;
 }
 
 .moyenne_image_et_moyenne_banniere{
-    margin-left: 3em;
-    margin-right: 3em;
+    margin-left: 2em;
+    margin-right: 2em;
     padding-bottom: 0.5em;
 }
 
 .moyenne_image{
-    width: 22em;
-    height: 22.5em;
+    width: 24em;
+    height: 19em;
     object-fit: cover;
     border-radius: 20px 20px 0px 0px;
 }
 
 .petite_image_et_petite_banniere{
-    margin-left: 3em;
-    margin-right: 3em;
+    margin-left: 2em;
+    margin-right: 2em;
     padding-bottom: 0.5em;
 }
 
 .petite_image{
-    width: 22em;
-    height: 14.5em;
+    width: 24em;
+    height: 14em;
     object-fit: cover;
     border-radius: 20px 20px 0px 0px;   
 }
 
-.banniere_grande_image, .banniere_moyenne_image, .banniere_petite_image{
-    padding-left: 11px;
+.banniere_grande_image, #banniere_grande_image, .banniere_moyenne_image, .banniere_petite_image{
+    padding-left: 2em;
     font-size: 0.8em;
 }
 
-.petite_image_et_petite_banniere, .moyenne_image_et_moyenne_banniere, .grande_image_et_grande_banniere{
-    margin-top: 3em;    
+.petite_image_et_petite_banniere, .moyenne_image_et_moyenne_banniere, .grande_image_et_grande_banniere, #grande_image_et_grande_banniere{
+    margin-top: 1em;    
     margin-bottom: 60px;
-    border-radius: 20px 20px 20px 20px;
-    box-shadow: 0px 5px 5px;
+    border-radius: 20px;
+    box-shadow: 0px 5px 5px #f2f2f2;
 }
 
 /*footer*/
 
 footer{
     background-color: #f2f2f2;
+    width: 100%;
 }
 
 #bas_de_page{
@@ -404,7 +445,7 @@ footer{
 
 #a_propos{
     width: 35em;
-    padding-left: 5em;
+    padding-left: 4em;
 }
 
 #nos_hebergements{
@@ -427,12 +468,13 @@ footer{
 /*écriture téléphone*/
 h1{
     font-family: 'bold';
-    font-size: 20px;
+    font-size: 25px;
 }
 
 h2{
     font-family: 'medium';
-    font-size: 17px;
+    font-size: 22px;
+    margin-left: 10px;
 }
 
 h3{
@@ -443,8 +485,14 @@ h3{
 p{
     font-family: 'regular';
     font-size: 14px;
+}
+
+#acceuil{
+    font-family: 'regular';
+    font-size: 16px;
     text-align: justify;
 }
+
 /*header*/
 
 .reservia{
@@ -622,24 +670,24 @@ section{
 /*hébergement à marseille*/
 
 .imgs{
-    width: 95%;
+    width: 353px;
     height: 10em;
     border-radius: 20px 20px  0px 0px;
-    border-left: 9px white solid;
-    border-right: 9px white solid;
-    border-top: 9px white solid;
+    border-left: 6px white solid;
+    border-right: 6px white solid;
+    border-top: 6px white solid;
     object-fit: cover;
 }
 
 .ecart_haut, .ecart_bas{
     background-color:white;
     border-radius: 20px;
-    margin-bottom: 2em;
+    margin-bottom: 1.5em;
     box-shadow: 0px 5px 5px;
 }
 
 .ecart_haut{
-    margin-top: 2em;
+    margin-top: 1.5em;
 }
 
 .banniere{
@@ -682,16 +730,16 @@ section{
 }
 
 #chart{
-    width: 8%;
-    height: 8%;
-    margin-left: 35%;
+    width: 7%;
+    height: 7%;
+    margin-left: 110px;
     margin-top: 5%;
 }
 
 
 .div_populaire{
     display: flex;
-    margin-top: 3em;
+    margin-top: 2em;
     box-shadow: 0px 5px 5px;
     border-radius: 20px;
     height: 168px;
@@ -736,7 +784,7 @@ section{
 
 /*images "activités à Marseille"*/
 
-.grande_image_et_grande_banniere, .moyenne_image_et_moyenne_banniere, .petite_image_et_petite_banniere{
+.grande_image_et_grande_banniere, #grande_image_et_grande_banniere, .moyenne_image_et_moyenne_banniere, .petite_image_et_petite_banniere{
     background-color:white;
     border-radius: 20px;
     margin-bottom: 3em;
@@ -745,14 +793,14 @@ section{
     width: 95%;
 }
 
-.grande_image, .moyenne_image, .petite_image{
+.grande_image, #grande_image, .moyenne_image, .petite_image{
     width: 100%;
     height: 11em;
     border-radius: 20px 20px  0px 0px;
     object-fit: cover;
 }
 
-.banniere_grande_image, .banniere_moyenne_image, .banniere_petite_image{
+.banniere_grande_image, #banniere_grande_image, .banniere_moyenne_image, .banniere_petite_image{
     padding-left: 11px;
     font-size: 0.8em;
 }
