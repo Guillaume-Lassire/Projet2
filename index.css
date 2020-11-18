@@ -51,7 +51,7 @@ p{
 
 /*media queries desktop*/
 
-@media screen and (min-width: 376px)
+@media screen and (min-width: 1024px)
 {
 
 /*header*/
@@ -124,13 +124,23 @@ nav a:hover{
     display: none;
 }
 
-#map_marker{
-    width: 1em;
-    height: 1em;
-    padding: 0.7em;
-    margin-top: 0.98em;
+#map_marker_desktop{
+    width: 1.4em;
+    height: 1.4em;
+    padding: 0.97em;
+    margin-top: 1em;
     background-color: #f2f2f2;
     border-radius: 10px 0px 0px 10px;
+}
+
+#recherche_desktop{
+    width: 20em;
+    height: 4em;
+    padding: 5px;
+    padding-left: 20px;
+    outline: none;
+    border: 0.2em solid  #f2f2f2;
+    border-right: none;
 }
 
 input{
@@ -138,9 +148,9 @@ input{
     font-family: 'medium';
 }
 
-#back{
+#back_desktop{
     background-color:#0065FC;
-    height: 2.3em;
+    height: 3.3em;
     margin-top: 1em;
     padding-right: 1.5em;    
     border-radius: 0px 15px 15px 0px;
@@ -148,7 +158,7 @@ input{
 
 label{
     font-family: 'medium';
-    padding-left: 1.5em;
+    padding-left: 1em;
     color: white;
 }
 
@@ -156,6 +166,7 @@ label{
 
 #filtre_desktop{
     display: flex;
+    flex-flow: row wrap;
     margin-top: 3em;
 }
 
@@ -163,9 +174,15 @@ label{
     display: none;
 }
 
+#titre_filtre_desktop{
+    margin-top: 30px;
+    margin-right: 3.5em;
+}
+
 .aide{
     display: flex;
-    margin-left: 3.5em;
+    margin-top: 10px;
+    margin-right: 3.5em;
     height: 4em;
     border-radius: 40px;
     border-top: 4px #f2f2f2 solid;
@@ -179,7 +196,7 @@ label{
 
 #aide_desktop{
     display: flex;
-    margin-left: 3.5em;
+    margin-top: 10px;
     min-width: 18em;
     height: 4em;
     border-radius: 40px;
@@ -226,13 +243,19 @@ label{
 
 /*arrière plan pour hébergement à marseille*/
 
-#article{
+#article_desktop{
     background-color: #f2f2f2;
     margin-top: 2em;
     margin-left: 2.5%;
+    margin-right: 2.9%;
     border-radius: 30px;
     width: 58.8%;
+    min-width: 41em;
     padding:  2.5% 0%;
+}
+
+#article_tablette{
+    display: none;
 }
 
 article h2{
@@ -249,27 +272,27 @@ article h2{
     width: 96%;
     height: 9em;
     border-radius: 20px 20px  0px 0px;
-    border-left: 6px white solid;
-    border-right: 6px white solid;
     border-top: 6px white solid;
+    padding-left: 2%;
     object-fit: cover;
+    padding-left: 2%;
 }
 
 .ecart_haut, .ecart_bas{
     background-color:white;
     border-radius: 20px;
-    margin-left: 2.525em;
+    margin-left: 3.6%;
+    width: 28.2%;
+    min-width: 11.5em;
 }
 
 .ecart_haut{
     margin-top: 1em;
     margin-bottom: 3em;
-    width: 28.2%;
 }
 
 .ecart_bas{
     margin-bottom: 2em;
-    width: 28.2%;
 }
 
 .banniere{
@@ -304,9 +327,10 @@ article h2{
 #aside{
     background-color: #f2f2f2;
     margin-top: 2em;
-    margin-right: 3em;
+    margin-right: 2.5%;
     border-radius: 30px;
     width: 33.6%;
+    min-width: 37.80em;
     padding-top: 2em;
 }
 
@@ -319,7 +343,7 @@ article h2{
 #chart{
     width: 2em;
     height: 2em;
-    margin-left: 48.7%;
+    padding-left: 45%;
     margin-top: 1.5em;
 }
 
@@ -327,14 +351,14 @@ article h2{
     display: flex;
     height: 13em;
     margin-top: 1.7em;
-    margin-left: 2.5em;
-    margin-right: 2.5em;
+    margin-left: 6.25%;
+    margin-right: 6.25%;
 }
 
 .imgs_populaire{
     object-fit: cover;
     width: 14em;
-    height: 11.6em;
+    height: 89.2%;
     border-radius: 20px 0px 0px 20px;
     border-left: 0.7em white solid;
     border-bottom: 0.7em white solid;
@@ -343,14 +367,14 @@ article h2{
 
 .banniere_populaire
 {
-    width: 18.3em;
+    width: 80%;
     background-color: white;
     border-radius: 0px 20px 20px 0px; 
     padding: 0em 1em;
 }
 
 .etoile_populaire, #etoile_populaire{
-    margin-top: 4.5em;
+    margin-top: 4em;
 }
 
 /*hébergement + les plus populaires*/
@@ -358,13 +382,16 @@ article h2{
 section{
     display: flex;
     margin-bottom: 3em;
-    justify-content: space-between;
 }
 
 /*Activités à Marseille*/
 
 #activite_marseille{
     display: flex;
+}
+
+#activite_marseille_tablette{
+    display: none;
 }
 
 #ancre_activite{
@@ -375,9 +402,10 @@ section{
 /*images "activités à Marseille"*/
 
 .grande_image_et_grande_banniere{
-    margin-left: 2.25em;
-    margin-right: 2.25em;
+    margin-left: 1.89%;
+    margin-right: 1.89%;
     width: 22%;
+    min-width: 15.4em;
 }
 
 .grande_image{
@@ -388,9 +416,10 @@ section{
 }
 
 #grande_image_et_grande_banniere{
-    margin-left: 3em;
-    margin-right: 2.25em;
+    margin-left: 2.52%;
+    margin-right: 1.89%;
     width: 22%;
+    min-width: 15.4em;
 }
 
 #grande_image{
@@ -401,8 +430,8 @@ section{
 }
 
 .moyenne_image_et_moyenne_banniere{
-    margin-left: 2em;
-    margin-right: 2em;
+    margin-left: 1.68%;
+    margin-right: 1.68%;
     padding-bottom: 0.5em;
 }
 
@@ -414,8 +443,8 @@ section{
 }
 
 .petite_image_et_petite_banniere{
-    margin-left: 2em;
-    margin-right: 2em;
+    margin-left: 1.68%;
+    margin-right: 1.68%;
     padding-bottom: 0.5em;
 }
 
@@ -439,14 +468,15 @@ section{
 }
 
 .div{    
-    width: 23.5%;
+    width: 22.9%;
+    min-width: 16.45em;
 }
 
 /*footer*/
 
 footer{
     background-color: #f2f2f2;
-    width: 100%;
+    min-width: 69.375em;
 }
 
 #bas_de_page{
@@ -456,31 +486,31 @@ footer{
 }
 
 #a_propos{
-    width: 35em;
-    padding-left: 3.5em;
+    width: 29%;
+    padding-left: 2.9%;
 }
 
 #nos_hebergements{
-    width: 35em;
-    padding-left: 5em;
+    width: 29%;
+    padding-left: 4.2%;
 }
 
 #assistance{
-    width: 35em;
-    padding-left: 5em;
+    width: 29%;
+    padding-left: 4.2%;
 }
 }
 
 
 /*media queries*/
 
-@media screen and (max-width: 375px)
+@media screen and (max-width: 425px)
 {
 
 /*body*/
 body{
-    padding: 0px;
-    margin: px;
+    padding-top: 2em;
+    margin: 0px;
 }
 
 /*écriture téléphone*/
@@ -514,10 +544,10 @@ p{
 /*header*/
 
 .reservia{
-    width: 34.7%;
-    height: 9.75%;
+    width: 130px;
+    height: 65px;
     position: absolute;
-    top: 0px;
+    top: 1.7em;
     left: 0px;
 }
 
@@ -537,7 +567,7 @@ nav ul{
 }
 
 #nav_top{
-    margin-left: 230px;
+    margin-left: 61.3%;
 }
 
 #nav_bottom_left{
@@ -561,22 +591,32 @@ nav a{
 
 /*Bouton recherche*/
 
-#bouton_recherche_téléphone{
-    display: flex;
-    margin-top: 25px;
-}
-
 #bouton_recherche_desktop{
     display: none;
 }
 
-#map_marker{
-    width: 20.8px;
-    height: 20.8px;
-    padding: 8px;
+#bouton_recherche_téléphone{
+    display: flex;
+    margin-top: 1.6em;
+}
+
+#map_marker_telephone{
+    width: 1.35em;
+    height: 1.35em;
+    padding: 0.6em;
     margin-top: 15px;
     background-color: #f2f2f2;
     border-radius: 10px 0px 0px 10px;
+}
+
+#recherche_telephone{
+    width: 15em;
+    height: 3em;
+    padding: 5px;
+    outline: none;
+    border: 0.2em solid  #f2f2f2;
+    border-right: none;
+    margin-top: 15px;
 }
 
 input{
@@ -584,18 +624,14 @@ input{
     font-family: 'medium';
 }
 
-#back{
-    background-color:#0065FC;
-    height: 34.56px;
-    margin-top: 16px;
-    padding-right: 6px;    
-    border-radius: 0px 15px 15px 0px;
-}
-
-label{
-    font-family: 'medium';
-    padding-left: 1.5em;
+#loupe{
+    width: 1.35em;
+    height: 1.35em;
+    padding: 0.6em;
+    margin-top: 15px;
+    background-color:  #0065fc;
     color: white;
+    border-radius: 10px;
 }
 
 /*en-tête*/
@@ -623,6 +659,7 @@ label{
     height: 52px;
     margin-bottom: 1em;
     padding-right: 10px;
+    margin-right: 10px;
     border-radius: 45px;
     border: 3px #f2f2f2 solid;
 }
@@ -632,7 +669,7 @@ label{
     height: 52px;
     margin-bottom: 1em;
     padding-right: 10px;
-    margin-left: 10px;
+    margin-right: 10px;
     border-radius: 45px;
     border: 3px #f2f2f2 solid;
 }
@@ -678,9 +715,13 @@ section{
     margin-bottom: 35px;
 }
 
-#article{
+#article_desktop{
     margin: 5px;
     margin-top: 35px;
+}
+
+#article_tablette{
+    display: none;
 }
 
 /*hébergement à marseille*/
@@ -734,8 +775,7 @@ section{
 /*arrière plan pour "les plus populaires"*/
 
 #aside{
-    width: 94.6%;
-    padding: 2.7%;
+    width: 100%;
     padding-bottom: 4em;
     margin-top: 35px;
     background-color: #f2f2f2;
@@ -748,24 +788,26 @@ section{
 }
 
 #chart{
-    width: 7%;
-    height: 7%;
-    margin-left: 29.3%;
-    margin-top: 5%;
+    width: 2em;
+    height: 2em;
+    margin-left: 27%;
+    margin-top: 1em;
 }
 
 
 .div_populaire{
     display: flex;
+    height: 10.5em;
     margin-top: 2em;
+    margin-right: 6%;
+    margin-left: 6%;
     box-shadow: 0px 5px 5px;
     border-radius: 20px;
-    height: 168px;
 }
 
 .imgs_populaire{
-    width: 146px;
-    height: 150px;
+    width: 9.125em;
+    height: 9.375em;
     border-radius: 20px 0px 0px 20px;
     border-left: 9px white solid;
     border-bottom: 9px white solid;
@@ -775,8 +817,8 @@ section{
 
 .banniere_populaire
 {
-    width: 60.5%;
-    height: 168px;
+    width: 80%;
+    height: 10.5em;
     background-color: white;
     color:black;
     border-radius: 0px 20px 20px 0px; 
@@ -794,10 +836,14 @@ section{
 /*Activités à Marseille*/
 
 #activite_marseille{
-    width: 365px;
+    width: 100%;
     padding-left: 10px;
     padding-top: 1em;
     padding-bottom: 10px;
+}
+
+#activite_marseille_tablette{
+    display: none;
 }
 
 /*images "activités à Marseille"*/
