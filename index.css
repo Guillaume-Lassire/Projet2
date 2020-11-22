@@ -501,6 +501,454 @@ footer{
 }
 }
 
+/*media queries tablette*/
+
+@media screen and (min-width: 426px) and (max-width: 1023px)
+{
+
+/*écriture*/
+
+@font-face{
+    font-family: 'bold';
+    src: url('police/Raleway-Bold.ttf');
+}
+
+@font-face{
+    font-family: 'regular';
+    src: url('police/Raleway-Regular.ttf');
+}
+
+@font-face{
+    font-family: 'light';
+    src: url('police/Raleway-Light.ttf');
+}
+
+@font-face{
+    font-family: 'medium';
+    src: url('police/Raleway-Medium.ttf');
+}
+
+h1, h3{
+    font-family: 'bold';
+    font-size: 20px;
+}
+
+h2{
+    font-family: 'bold';
+    font-size: 22px;
+}
+h4{
+    font-family: 'medium';
+    font-size: 17px;
+}
+
+p{
+    font-family: 'Extralight';
+}
+
+/*header*/
+
+.reservia{
+    width: 8em;
+    height: 4em;
+    margin-left: 2%;
+}
+
+/*nav*/
+
+#nav_telephone{
+    display: none;
+}
+
+#nav_desktop{
+    display: flex;
+    justify-content: space-between;    
+}
+
+nav{
+    padding-top: 0.5em;
+}
+
+nav ul{
+    list-style-type: none;
+    display: flex;
+}
+
+nav li{
+    margin-right: 2em;
+    margin-left: 1em;
+}
+
+nav a{
+    font-size: 1.3em;
+    color: #0065FC;
+    padding-top: 2.1em;
+    text-decoration: none;
+}
+
+/*en-tete*/
+
+#en_tete{
+    margin-left: 2%;
+}
+
+/*Bouton recherche*/
+
+#bouton_recherche_desktop{
+    display: flex;
+    margin-top: 2em;
+}
+
+#bouton_recherche_téléphone{
+    display: none;
+}
+
+#map_marker_desktop{
+    width: 1.4em;
+    height: 1.4em;
+    padding: 0.97em;
+    margin-top: 1em;
+    background-color: #f2f2f2;
+    border-radius: 10px 0px 0px 10px;
+}
+
+#recherche_desktop{
+    width: 20em;
+    height: 4em;
+    padding: 5px;
+    padding-left: 20px;
+    outline: none;
+    border: 0.2em solid  #f2f2f2;
+    border-right: none;
+}
+
+input{
+    height: 2.77em;
+    font-family: 'medium';
+}
+
+#back_desktop{
+    background-color:#0065FC;
+    height: 3.3em;
+    margin-top: 1em;
+    padding-right: 1.5em;    
+    border-radius: 0px 15px 15px 0px;
+}
+
+label{
+    font-family: 'medium';
+    padding-left: 1em;
+    color: white;
+}
+
+/*filtre*/
+
+#filtre_desktop{
+    display: flex;
+    flex-flow: row wrap;
+    margin-top: 2em;
+    margin-left: 2%;
+    margin-right: 2%;
+}
+
+#filtre_telephone{
+    display: none;
+}
+
+#titre_filtre_desktop{
+    margin-top: 30px;
+    margin-right: 2.5em;
+}
+
+.aide{
+    display: flex;
+    margin-top: 10px;
+    margin-right: 2.5em;
+    height: 4em;
+    border-radius: 40px;
+    border-top: 4px #f2f2f2 solid;
+    border-right: 4px #f2f2f2 solid;
+    border-bottom: 4px #f2f2f2 solid;
+}
+
+.aide:hover{
+    background-color: #deebff;
+}
+
+#aide_desktop{
+    display: flex;
+    margin-top: 10px;
+    min-width: 18em;
+    height: 4em;
+    border-radius: 40px;
+    border-top: 4px #f2f2f2 solid;
+    border-right: 4px #f2f2f2 solid;
+    border-bottom: 4px #f2f2f2 solid;
+}
+
+#aide_desktop:hover{
+    background-color: #deebff;
+}
+
+.svg{
+    width: 1.5em;
+    height: 1.5em;
+    padding: 1.25em;
+    border-radius: 30px;
+    color: #0065fc;
+    background-color: #deebff;
+}
+
+.ecriture{
+    padding-left: 1em;
+    padding-right: 1.5em;
+}
+
+/*info*/
+
+#info_aide{
+    display: flex;
+    margin-top: 1em;
+    margin-left: 2%;
+    margin-right: 2%;
+}
+
+#info{
+    background-color: white;
+    width: 15px;
+    height: 15px;
+    padding: 5px;
+    margin-top: 13px;
+    margin-right: 20px;
+    margin-left: 3px;
+    color: #0065fc;
+    border-radius: 20px;
+    border: 2px #f2f2f2 solid;
+}
+
+/*hébergement à marseille*/
+
+#article_desktop{
+    display: none;
+}
+
+.titre_tablette{
+    margin-left: 2%;
+}
+
+.imgs{
+    width: 94.8%;
+    height: 9em;
+    border-radius: 20px 20px  0px 0px;
+    border-top: 0.5em  #f2f2f2 solid;
+    padding-left: 2.6%;
+    object-fit: cover;
+}
+
+.ecart_haut, .ecart_milieu, .ecart_bas{
+    background-color:#f2f2f2;
+    border-radius: 20px;
+    margin-left: 6.7%;
+    width: 39.6%;
+}
+
+.ecart_haut{
+    margin-top: 1.5em;
+    margin-bottom: 3em;
+}
+
+.ecart_bas, .ecart_milieu{
+    margin-bottom: 3em;
+}
+
+.banniere{
+    padding-left: 11px;
+    font-size: 0.8em;
+    line-height: 80%;
+}
+
+#haut_tablette, #milieu, #bas_tablette{
+    display: flex;
+}
+
+.etoile{
+    padding-left: 10px;
+    margin-bottom: 10px;
+}
+
+.blue_star{
+    color: #0065FC;
+    width: 1.3em;
+    height: 1.3em;
+}
+
+.star{
+    color: white;
+    width: 1.3em;
+    height: 1.3em;
+}
+
+/*arrière plan pour "les plus populaires"*/
+
+#aside{
+    width: 100%;
+    margin: 2em 0em;
+    padding-top: 1em;
+    padding-bottom: 4em;
+    margin-bottom: 3em;
+    background-color: #f2f2f2;
+}
+
+/*les plus populaires*/
+
+#populaire{
+    display: flex;
+    margin-left: 2%;
+}
+
+#chart{
+    width: 2.5em;
+    height: 3em;
+    margin-left: 60%;
+    margin-top: 0.5em;
+}
+
+
+.div_populaire{
+    display: flex;
+    height: 12.5em;
+    margin-top: 1.7em;
+    margin-right: 6.25%;
+    margin-left: 6.25%;
+    border-radius: 20px;
+}
+
+.imgs_populaire{
+    width: 15em;
+    height: 11.5em;
+    border-radius: 20px 0px 0px 20px;
+    border-left: 0.5em white solid;
+    border-bottom: 0.5em white solid;
+    border-top: 0.5em white solid;
+    object-fit: cover;
+}
+
+.banniere_populaire
+{
+    width: 80%;
+    background-color: white;
+    color:black;
+    border-radius: 0px 20px 20px 0px; 
+    padding-left: 2em; 
+}
+
+.etoile_populaire, #etoile_populaire{
+    margin-top: 4em;
+}
+
+/*Activités à Marseille*/
+
+#activite_marseille{
+    display: none;
+}
+
+#activite_marseille_tablette{
+    padding-left: 10px;
+    padding-top: 1em;
+    padding-bottom: 10px;
+}
+
+/*activité à Marseille*/
+
+.activite_marseille_flex{
+    display: flex;
+}
+
+#activite_marseille{
+    display: none;
+}
+
+#ancre_activite{
+    margin-bottom: 2em;
+}
+
+/*images "activités à Marseille"*/
+
+.grande_image_et_grande_banniere{
+    margin: 0em 5em;
+}
+
+.grande_image{
+    width: 100%;
+    height: 19em;
+    border-radius: 20px 20px  0px 0px;
+    object-fit: cover;
+}
+
+.banniere_grande_image{
+    padding-left: 0.75em;
+}
+
+.moyenne_image_et_moyenne_banniere, .petite_image_et_petite_banniere{
+    width: 42%;
+}
+
+.moyenne_image_et_moyenne_banniere{
+    margin-left: 4%;
+    margin-right: 4%;
+}
+
+.petite_image_et_petite_banniere{
+    margin-right: 4%;
+    margin-left: 4%;
+}
+
+.moyenne_image, .petite_image{
+    width: 100%;
+    height: 17em;
+    border-radius: 20px 20px  0px 0px;
+    object-fit: cover;
+}
+
+.banniere_moyenne_image, .banniere_petite_image{
+    padding-left: 0.75em;
+}
+
+.grande_image_et_grande_banniere, .moyenne_image_et_moyenne_banniere, .petite_image_et_petite_banniere{
+    border-radius: 20px;
+    margin-bottom: 3em;
+    padding-bottom: 0.25em;
+    box-shadow: 0px 5px 5px;
+}
+
+/*footer*/
+
+footer{
+    width: 100%;
+    background-color: #f2f2f2;
+}
+
+#bas_de_page{
+    display: flex;
+    padding-top: 25px;
+    padding-bottom: 25px;
+}
+
+#a_propos{
+    width: 22%;
+    margin-left: 10%;
+}
+
+#nos_hebergements{
+    width: 22%;
+    margin-left: 10%;
+}
+
+#assistance{
+    width: 22%;
+    margin-left: 10%;
+}
+}
 
 /*media queries*/
 
@@ -636,17 +1084,18 @@ input{
 
 /*en-tête*/
 
-#filtre_telephone{
-    margin-top: 35px;
-    margin-bottom: 20px;
+#en_tete{
+    margin-left: 2.5%;
+    margin-right: 2.5%;
 }
 
 #filtre_desktop{
     display: none;
 }
 
-#en_tete{
-    margin-left: 1.5%;
+#filtre_telephone{
+    margin-top: 35px;
+    margin-bottom: 20px;
 }
 
 #icone_filtre{
@@ -662,6 +1111,7 @@ input{
     margin-right: 10px;
     border-radius: 45px;
     border: 3px #f2f2f2 solid;
+    border-left: none;
 }
 
 #aide_telephone{
@@ -672,6 +1122,7 @@ input{
     margin-right: 10px;
     border-radius: 45px;
     border: 3px #f2f2f2 solid;
+    border-left: none;
 }
 
 .svg{
@@ -700,8 +1151,6 @@ input{
     height: 15px;
     padding: 5px;
     margin-top: 13px;
-    margin-right: 20px;
-    margin-left: 3px;
     color: #0065fc;
     border-radius: 20px;
     border: 2px #f2f2f2 solid;
@@ -739,10 +1188,9 @@ section{
 .ecart_haut, .ecart_bas{
     background-color:white;
     border-radius: 20px;
-    margin-bottom: 1.5em;
     box-shadow: 0px 5px 5px;
-    width: 97%;
-    margin-left: 1.5%;
+    width: 95%;
+    margin: 30px auto;
 }
 
 .ecart_haut{
@@ -785,6 +1233,7 @@ section{
 
 #populaire{
     display: flex;
+    margin: 5px;
 }
 
 #chart{
@@ -798,9 +1247,8 @@ section{
 .div_populaire{
     display: flex;
     height: 10.5em;
-    margin-top: 2em;
-    margin-right: 6%;
-    margin-left: 6%;
+    width: 95%;
+    margin:  32px auto;
     box-shadow: 0px 5px 5px;
     border-radius: 20px;
 }
@@ -837,7 +1285,6 @@ section{
 
 #activite_marseille{
     width: 100%;
-    padding-left: 10px;
     padding-top: 1em;
     padding-bottom: 10px;
 }
@@ -855,6 +1302,7 @@ section{
     padding-bottom: 7px;
     box-shadow: 0px 5px 5px;
     width: 95%;
+    margin: 45px auto;
 }
 
 .grande_image, #grande_image, .moyenne_image, .petite_image{
