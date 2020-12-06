@@ -934,7 +934,7 @@ section{
     border-radius: 20px;
     margin-bottom: 3em;
     padding-bottom: 0.25em;
-    box-shadow: 0px 5px 5px;
+    box-shadow: 0px 5px 5px #f2f2f2;
 }
 
 /*footer*/
@@ -986,7 +986,6 @@ h1{
 h2{
     font-family: 'medium';
     font-size: 22px;
-    margin-left: 10px;
 }
 
 h3{
@@ -1024,24 +1023,45 @@ p{
 }
 
 #nav_telephone_top{
-    margin-left: 15px;
-    margin-right: 15px;
+    margin-left: 5%;
+    margin-right: 5%;
 }
 
 #nav_telephone_bottom{
-    margin-left: 50px;
-    margin-right: 50px;
+    width: 100%;
     margin-top: 30px;
 }
 
 #nav_telephone_inscrire{
+    color: #0065FC;
     margin-top: 20px;
+}
+
+#nav_telephone_hebergement{
+    padding-left: 11.75%;
+    width: 38.25%;
+}
+
+#nav_telephone_activite{
+    padding-right: 11.75%;
+    padding-left: 18%;
+}
+
+#nav_telephone_activite, #nav_telephone_hebergement{
+    padding-bottom: 10px;
+    border-bottom: 5px solid #f2f2f2;
 }
 
 nav a{
     font-size: 20.8px;
     color: #0065FC;
     text-decoration: none;
+}
+
+#nav_telephone_hebergement:hover, #nav_telephone_activite:hover{
+    color: #0065FC;
+    border-bottom: 5px solid #0065FC;
+    padding-bottom: 10px;
 }
 
 /*Bouton recherche*/
@@ -1065,7 +1085,7 @@ nav a{
 }
 
 #recherche_telephone{
-    width: 15em;
+    width: 80%;
     height: 3em;
     padding: 5px;
     outline: none;
@@ -1092,8 +1112,8 @@ input{
 /*en-tête*/
 
 #en_tete{
-    margin-left: 2.5%;
-    margin-right: 2.5%;
+    margin-left: 5%;
+    margin-right: 5%;
 }
 
 #filtre_desktop{
@@ -1172,12 +1192,15 @@ section{
 }
 
 #article_desktop{
-    margin: 5px;
     margin-top: 35px;
 }
 
 #article_tablette{
     display: none;
+}
+
+.titre_telephone, #texte, #ancre_activite{
+    margin-left: 5%;
 }
 
 /*hébergement à marseille*/
@@ -1195,8 +1218,8 @@ section{
 .ecart_haut, .ecart_bas{
     background-color:white;
     border-radius: 20px;
-    box-shadow: 0px 5px 5px;
-    width: 95%;
+    box-shadow: 0px 5px 5px #f2f2f2;
+    width: 90%;
     margin: 30px auto;
 }
 
@@ -1240,8 +1263,8 @@ section{
 
 #populaire{
     display: flex;
-    margin: 5px;
     justify-content: space-between;
+    margin-right: 5%;
 }
 
 #chart{
@@ -1254,9 +1277,9 @@ section{
 .div_populaire{
     display: flex;
     height: 10.5em;
-    width: 95%;
+    width: 90%;
     margin:  32px auto;
-    box-shadow: 0px 5px 5px;
+    box-shadow: 0px 5px 5px #f2f2f2;
     border-radius: 20px;
 }
 
@@ -1307,8 +1330,8 @@ section{
     border-radius: 20px;
     margin-bottom: 48px;
     padding-bottom: 7px;
-    box-shadow: 0px 5px 5px;
-    width: 95%;
+    box-shadow: 0px 5px 5px #f2f2f2;
+    width: 90%;
     margin: 45px auto;
 }
 
@@ -1327,7 +1350,7 @@ section{
 /*footer*/
 
 footer{
-    padding-left: 25px;
+    padding-left: 5%;
     padding-top: 16px;
     padding-bottom: 10px;
     background-color: #f2f2f2;
