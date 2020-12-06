@@ -101,7 +101,7 @@ nav li{
 nav a{
     font-size: 1.3em;
     color: grey;
-    padding-top: 33.6px;
+    padding-top: 44px;
     padding-right: 16px;
     padding-left: 16px;
     text-decoration: none;
@@ -405,7 +405,7 @@ section{
 
 #ancre_activite{
     padding-top: 32px;
-    margin-left: 32px;
+    margin-left: 2.5%;
 }
 
 /*images "activités à Marseille"*/
