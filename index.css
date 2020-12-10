@@ -40,7 +40,7 @@ h1{
 
 h2{
     font-family: 'bold';
-    font-size: 24px;
+    font-size: 20px;
 }
 
 h3{
@@ -50,7 +50,7 @@ h3{
 
 h4{
     font-family: 'medium';
-    font-size: 17px;
+    font-size: 14px;
 }
 
 p{
@@ -68,7 +68,7 @@ p{
 .reservia{
     width: 8em;
     height: 4em;
-    margin-left: 48px;
+    margin-left: 35px;
     padding-top: 32px;
     padding-bottom: 32px;
 }
@@ -119,7 +119,8 @@ nav a:hover{
 /*en-tete*/
 
 #en_tete{
-    margin-left: 48px;
+    margin-left: 35px;
+    margin-right: 35px;
 }
 
 /*Bouton recherche*/
@@ -250,39 +251,44 @@ label{
     border: 2px #f2f2f2 solid;
 }
 
+/*hébergement + les plus populaires*/
+
+section{
+    display: flex;
+    justify-content: space-between;
+}
+
 /*arrière plan pour hébergement à marseille*/
 
 #article_desktop{
     background-color: #f2f2f2;
-    margin-top: 32px;
-    margin-left: 2.5%;
-    margin-right: 2.9%;
+    width: 61.1%;
+    min-width: 625px;
     border-radius: 30px;
-    width: 58.8%;
-    min-width: 656px;
-    padding:  2.5% 0%;
+    margin-top: 32px;
+    margin-left: 35px;
+    padding-top: 25px;
 }
 
 #article_tablette{
     display: none;
 }
 
-article h2{
-    margin-left: 32px;
+article h2, #texte{
+    margin-left: 40px;
 }
 
-#texte{
-    margin-left: 40.4px;
+.texte_banniere{
+    font-size: 13px;
 }
 
 /*hébergement à marseille*/
 
 .imgs{
-    width: 96%;
-    height: 9em;
+    width: 95.9%;
+    height: 115px;
     border-radius: 20px 20px  0px 0px;
     border-top: 6px white solid;
-    padding-left: 2%;
     object-fit: cover;
     padding-left: 2%;
 }
@@ -292,7 +298,7 @@ article h2{
     border-radius: 20px;
     margin-left: 3.6%;
     width: 28.2%;
-    min-width: 184px;
+    min-width: 100px;
 }
 
 .ecart_haut{
@@ -305,9 +311,7 @@ article h2{
 }
 
 .banniere{
-    padding-left: 11px;
-    font-size: 0.8em;
-    line-height: 80%;
+    padding-left: 15px;
 }
 
 #haut, #bas{
@@ -315,31 +319,31 @@ article h2{
 }
 
 .etoile{
-    padding-left: 10px;
+    padding-left: 15px;
     margin-bottom: 10px;
 }
 
 .blue_star{
     color: #0065FC;
-    width: 20.8px;
-    height: 20.8px;
+    width: 15px;
+    height: 15px;
 }
 
 .star{
     color: #f2f2f2;
-    width: 20.8px;
-    height: 20.8px;
+    width: 15px;
+    height: 15px;
 }
 
 /*arrière plan pour "les plus populaires"*/
 
 #aside{
     background-color: #f2f2f2;
+    width: 29.2%;
+    min-width: 299px;
     margin-top: 32px;
-    margin-right: 2.5%;
+    margin-right: 35px;
     border-radius: 30px;
-    width: 33.6%;
-    min-width: 604.8px;
     padding-top: 32px;
 }
 
@@ -347,56 +351,56 @@ article h2{
 
 #populaire{
     display: flex;
+    justify-content: space-between;
 }
 
 #chart{
-    width: 32px;
-    height: 32px;
-    padding-left: 45%;
-    margin-top: 24px;
+    width: 26px;
+    height: 20px;
+    margin-top: 22px;
+    margin-right: 40px;
 }
 
 .div_populaire{
     display: flex;
-    height: 13em;
-    margin-top: 27.2px;
-    margin-left: 6.25%;
-    margin-right: 6.25%;
+    width: 80.95%;
+    min-width: 242px;
+    height: 145px;
+    margin-top: 40px;
+    margin-left: 40px;
+    margin-right: 40px;
 }
 
 .imgs_populaire{
     object-fit: cover;
-    width: 14em;
-    height: 89.2%;
+    width: 130px;
+    height: 135px;
     border-radius: 20px 0px 0px 20px;
-    border-left: 0.7em white solid;
-    border-bottom: 0.7em white solid;
-    border-top: 0.7em white solid;
+    border-left: 5px white solid;
+    border-bottom: 5px white solid;
+    border-top: 5px white solid;
 }
 
 .banniere_populaire
 {
-    width: 80%;
+    width: 61.8%;
     background-color: white;
     border-radius: 0px 20px 20px 0px; 
     padding: 0px 16px;
 }
 
 .etoile_populaire, #etoile_populaire{
-    margin-top: 64px;
+    margin-top: 40px;
 }
 
-/*hébergement + les plus populaires*/
-
-section{
-    display: flex;
-    margin-bottom: 48px;
-}
 
 /*Activités à Marseille*/
 
 #activite_marseille{
     display: flex;
+    margin-left: 35px;
+    margin-right: 35px;
+    margin-bottom: 60px;
 }
 
 #activite_marseille_tablette{
@@ -405,108 +409,81 @@ section{
 
 #ancre_activite{
     padding-top: 32px;
-    margin-left: 2.5%;
+    margin-left: 35px;
+    margin-right: 35px;
 }
 
 /*images "activités à Marseille"*/
 
-.grande_image_et_grande_banniere{
-    margin-left: 1.89%;
-    margin-right: 1.89%;
-    width: 22%;
-    min-width: 246.4px;
+.grande_image_et_grande_banniere, #grande_image_et_grande_banniere, .div{
+    width: 22.26%;
+    min-width: 212.36px;
+}
+
+.grande_image, #grande_image, .moyenne_image, .petite_image{
+    width: 100%;
+    object-fit: cover;
+    border-radius: 20px 20px 0px 0px;
 }
 
 .grande_image{
-    width: 100%;
-    height: 41.5em;
-    object-fit: cover;
-    border-radius: 20px 20px 0px 0px;
-}
-
-#grande_image_et_grande_banniere{
-    margin-left: 2.52%;
-    margin-right: 1.89%;
-    width: 22%;
-    min-width: 246.4px;
+    height: 390px;
 }
 
 #grande_image{
-    width: 100%;
-    height: 41.5em;
-    object-fit: cover;
-    border-radius: 20px 20px 0px 0px;
-}
-
-.moyenne_image_et_moyenne_banniere{
-    margin-left: 1.68%;
-    margin-right: 1.68%;
-    padding-bottom: 8px;
+    height: 390px;
 }
 
 .moyenne_image{
-    width: 100%;
-    height: 19em;
-    object-fit: cover;
-    border-radius: 20px 20px 0px 0px;
-}
-
-.petite_image_et_petite_banniere{
-    margin-left: 1.68%;
-    margin-right: 1.68%;
-    padding-bottom: 8px;
+    height: 180px;
 }
 
 .petite_image{
-    width: 100%;
-    height: 14em;
-    object-fit: cover;
-    border-radius: 20px 20px 0px 0px;   
+    height: 110px;
 }
 
 .banniere_grande_image, #banniere_grande_image, .banniere_moyenne_image, .banniere_petite_image{
-    padding-left: 32px;
+    padding-left: 20px;
     font-size: 0.8em;
 }
 
+.banniere_moyenne_image, .banniere_petite_image{
+    padding-bottom: 1px;
+}
+
+#div_moyenne, #div_petit{
+    margin-bottom: 42px;
+}
+
 .petite_image_et_petite_banniere, .moyenne_image_et_moyenne_banniere, .grande_image_et_grande_banniere, #grande_image_et_grande_banniere{
-    margin-top: 16px;    
-    margin-bottom: 60px;
     border-radius: 20px;
     box-shadow: 0px 5px 5px #f2f2f2;
 }
 
-.div{    
-    width: 22.9%;
-    min-width: 263.2px;
+.grande_image_et_grande_banniere{
+    margin: 0px 3.47%;
+}
+
+#grande_image_et_grande_banniere{
+    margin-right: 3.47%;
 }
 
 /*footer*/
 
 footer{
     background-color: #f2f2f2;
-    min-width: 1110px;
 }
 
 #bas_de_page{
+    width: 75%;
     display: flex;
     padding-top: 25px;
     padding-bottom: 25px;
-}
-
-#a_propos{
-    width: 29%;
-    padding-left: 2.9%;
+    margin-left: 35px;
 }
 
 #nos_hebergements{
-    width: 29%;
-    padding-left: 4.2%;
-}
-
-#assistance{
-    width: 29%;
-    padding-left: 4.2%;
+    margin: 0px auto;
 }
 }
 
@@ -560,7 +537,7 @@ p{
 .reservia{
     width: 8em;
     height: 4em;
-    margin-left: 2%;
+    margin-left: 15px;
 }
 
 /*nav*/
@@ -598,7 +575,7 @@ nav a{
 /*en-tete*/
 
 #en_tete{
-    margin-left: 2%;
+    margin-left: 15px;
 }
 
 /*Bouton recherche*/
@@ -613,8 +590,8 @@ nav a{
 }
 
 #map_marker_desktop{
-    width: 1.4em;
-    height: 1.4em;
+    width: 22.4px;
+    height: 22.4px;
     padding: 15.52px;
     margin-top: 16px;
     background-color: #f2f2f2;
@@ -622,23 +599,23 @@ nav a{
 }
 
 #recherche_desktop{
-    width: 20em;
-    height: 4em;
+    width: 320px;
+    height: 54px;
     padding: 5px;
     padding-left: 20px;
     outline: none;
-    border: 0.2em solid  #f2f2f2;
+    border: 3.2px solid  #f2f2f2;
     border-right: none;
 }
 
 input{
-    height: 2.77em;
+    height: 44.32px;
     font-family: 'medium';
 }
 
 #back_desktop{
     background-color:#0065FC;
-    height: 3.3em;
+    height: 52.8px;
     margin-top: 16px;
     padding-right: 24px;    
     border-radius: 0px 15px 15px 0px;
@@ -656,8 +633,8 @@ label{
     display: flex;
     flex-flow: row wrap;
     margin-top: 16px;
-    margin-left: 2%;
-    margin-right: 2%;
+    margin-left: 15px;
+    margin-right: 15px;
 }
 
 #filtre_telephone{
@@ -725,8 +702,8 @@ section{
 #info_aide{
     display: flex;
     margin-top: 16px;
-    margin-left: 2%;
-    margin-right: 2%;
+    margin-left: 15px;
+    margin-right: 15px;
 }
 
 #info{
@@ -744,12 +721,16 @@ section{
 
 /*hébergement à marseille*/
 
+.titre_telephone, .titre_tablette, #texte, #ancre_activite{
+    margin-left: 34px;
+}
+
 #article_desktop{
     display: none;
 }
 
 .titre_tablette{
-    margin-left: 2%;
+    margin-left: 15px;
 }
 
 .imgs{
@@ -779,7 +760,7 @@ section{
 
 .banniere{
     padding-left: 11px;
-    font-size: 0.8em;
+    font-size: 12.8px;
     line-height: 80%;
 }
 
@@ -819,29 +800,29 @@ section{
 
 #populaire{
     display: flex;
-    margin-left: 2%;
+    justify-content: space-between;
+    margin-right: 17px;
 }
 
 #chart{
     width: 40px;
     height: 48px;
-    margin-left: 60%;
     margin-top: 8px;
 }
 
 
 .div_populaire{
     display: flex;
-    height: 12.5em;
-    margin-top: 1.7em;
+    height: 200px;
+    margin-top: 27.2px;
     margin-right: 6.25%;
     margin-left: 6.25%;
     border-radius: 20px;
 }
 
 .imgs_populaire{
-    width: 15em;
-    height: 11.5em;
+    width: 240px;
+    height: 184px;
     border-radius: 20px 0px 0px 20px;
     border-left: 8px white solid;
     border-bottom: 8px white solid;
@@ -896,13 +877,13 @@ section{
 
 .grande_image{
     width: 100%;
-    height: 19em;
+    height: 304px;
     border-radius: 20px 20px  0px 0px;
     object-fit: cover;
 }
 
 .banniere_grande_image{
-    padding-left: 0.75em;
+    padding-left: 12px;
 }
 
 .moyenne_image_et_moyenne_banniere, .petite_image_et_petite_banniere{
@@ -921,19 +902,19 @@ section{
 
 .moyenne_image, .petite_image{
     width: 100%;
-    height: 17em;
+    height: 272px;
     border-radius: 20px 20px  0px 0px;
     object-fit: cover;
 }
 
 .banniere_moyenne_image, .banniere_petite_image{
-    padding-left: 0.75em;
+    padding-left: 12px;
 }
 
 .grande_image_et_grande_banniere, .moyenne_image_et_moyenne_banniere, .petite_image_et_petite_banniere{
     border-radius: 20px;
-    margin-bottom: 3em;
-    padding-bottom: 0.25em;
+    margin-bottom: 48px;
+    padding-bottom: 4px;
     box-shadow: 0px 5px 5px #f2f2f2;
 }
 
@@ -946,23 +927,9 @@ footer{
 
 #bas_de_page{
     display: flex;
+    justify-content: space-around;
     padding-top: 25px;
     padding-bottom: 25px;
-}
-
-#a_propos{
-    width: 22%;
-    margin-left: 10%;
-}
-
-#nos_hebergements{
-    width: 22%;
-    margin-left: 10%;
-}
-
-#assistance{
-    width: 22%;
-    margin-left: 10%;
 }
 }
 
@@ -1023,8 +990,8 @@ p{
 }
 
 #nav_telephone_top{
-    margin-left: 5%;
-    margin-right: 5%;
+    margin-left: 20px;
+    margin-right: 20px;
 }
 
 #nav_telephone_bottom{
@@ -1043,8 +1010,9 @@ p{
 }
 
 #nav_telephone_activite{
+    width: 17.50%;
+    padding-left: 20.75%;
     padding-right: 11.75%;
-    padding-left: 18%;
 }
 
 #nav_telephone_activite, #nav_telephone_hebergement{
@@ -1112,8 +1080,8 @@ input{
 /*en-tête*/
 
 #en_tete{
-    margin-left: 5%;
-    margin-right: 5%;
+    margin-left: 20px;
+    margin-right: 20px;
 }
 
 #filtre_desktop{
@@ -1200,7 +1168,7 @@ section{
 }
 
 .titre_telephone, #texte, #ancre_activite{
-    margin-left: 5%;
+    margin-left: 20px;
 }
 
 /*hébergement à marseille*/
@@ -1219,7 +1187,7 @@ section{
     background-color:white;
     border-radius: 20px;
     box-shadow: 0px 5px 5px #f2f2f2;
-    width: 90%;
+    width: 95%;
     margin: 30px auto;
 }
 
@@ -1264,7 +1232,7 @@ section{
 #populaire{
     display: flex;
     justify-content: space-between;
-    margin-right: 5%;
+    margin-right: 20px;
 }
 
 #chart{
@@ -1277,8 +1245,8 @@ section{
 .div_populaire{
     display: flex;
     height: 10.5em;
-    width: 90%;
-    margin:  32px auto;
+    width: 95%;
+    margin: 32px auto;
     box-shadow: 0px 5px 5px #f2f2f2;
     border-radius: 20px;
 }
@@ -1331,7 +1299,7 @@ section{
     margin-bottom: 48px;
     padding-bottom: 7px;
     box-shadow: 0px 5px 5px #f2f2f2;
-    width: 90%;
+    width: 95%;
     margin: 45px auto;
 }
 
@@ -1350,7 +1318,7 @@ section{
 /*footer*/
 
 footer{
-    padding-left: 5%;
+    padding-left: 20px;
     padding-top: 16px;
     padding-bottom: 10px;
     background-color: #f2f2f2;
