@@ -365,8 +365,8 @@ article h2, #texte{
     display: flex;
     width: 80.95%;
     min-width: 242px;
-    height: 145px;
-    margin-top: 40px;
+    height: 170px;
+    margin-top: 20px;
     margin-left: 40px;
     margin-right: 40px;
 }
@@ -374,7 +374,7 @@ article h2, #texte{
 .imgs_populaire{
     object-fit: cover;
     width: 130px;
-    height: 135px;
+    height: 160px;
     border-radius: 20px 0px 0px 20px;
     border-left: 5px white solid;
     border-bottom: 5px white solid;
@@ -390,7 +390,7 @@ article h2, #texte{
 }
 
 .etoile_populaire, #etoile_populaire{
-    margin-top: 40px;
+    margin-top: 20px;
 }
 
 
