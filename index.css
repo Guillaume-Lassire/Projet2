@@ -296,7 +296,6 @@ article h2, #texte{
 .ecart_haut, .ecart_bas{
     background-color:white;
     border-radius: 20px;
-    margin-left: 3.6%;
     width: 28.2%;
     min-width: 100px;
 }
@@ -315,7 +314,10 @@ article h2, #texte{
 }
 
 #haut, #bas{
+    margin-left: 40px;
+    margin-right: 40px;
     display: flex;
+    justify-content: space-between;
 }
 
 .etoile{
@@ -461,11 +463,11 @@ article h2, #texte{
 }
 
 .grande_image_et_grande_banniere{
-    margin: 0px 3.47%;
+    margin: 0px auto;
 }
 
 #grande_image_et_grande_banniere{
-    margin-right: 3.47%;
+    margin-right: auto;
 }
 
 /*footer*/
@@ -745,7 +747,7 @@ section{
 .ecart_haut, .ecart_milieu, .ecart_bas{
     background-color:#f2f2f2;
     border-radius: 20px;
-    margin-left: 6.7%;
+    margin: auto;
     width: 39.6%;
 }
 
@@ -815,8 +817,8 @@ section{
     display: flex;
     height: 200px;
     margin-top: 27.2px;
-    margin-right: 6.25%;
-    margin-left: 6.25%;
+    margin-right: 48px;
+    margin-left: 48px;
     border-radius: 20px;
 }
 
@@ -890,14 +892,8 @@ section{
     width: 42%;
 }
 
-.moyenne_image_et_moyenne_banniere{
-    margin-left: 4%;
-    margin-right: 4%;
-}
-
-.petite_image_et_petite_banniere{
-    margin-right: 4%;
-    margin-left: 4%;
+.moyenne_image_et_moyenne_banniere, .petite_image_et_petite_banniere{
+    margin: auto;
 }
 
 .moyenne_image, .petite_image{
