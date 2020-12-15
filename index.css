@@ -358,19 +358,17 @@ article h2, #texte{
 
 #chart{
     width: 26px;
-    height: 20px;
+    height: 25px;
     margin-top: 22px;
-    margin-right: 40px;
+    margin-right: 45px;
 }
 
 .div_populaire{
     display: flex;
-    width: 80.95%;
+    width: 88%;
     min-width: 242px;
     height: 170px;
-    margin-top: 20px;
-    margin-left: 40px;
-    margin-right: 40px;
+    margin: 20px auto;
 }
 
 .imgs_populaire{
