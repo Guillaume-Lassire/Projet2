@@ -142,7 +142,6 @@ nav a:hover{
     width: 1.4em;
     height: 1.4em;
     padding: 15.52px;
-    margin-top: 16px;
     background-color: #f2f2f2;
     border-radius: 10px 0px 0px 10px;
 }
@@ -162,18 +161,16 @@ input{
     font-family: 'medium';
 }
 
-#back_desktop{
-    background-color:#0065FC;
-    height: 3.3em;
-    margin-top: 16px;
-    padding-right: 24px;    
-    border-radius: 0px 15px 15px 0px;
-}
-
 label{
     font-family: 'medium';
     padding-left: 16px;
     color: white;
+    background-color:#0065FC;
+    border-radius: 0px 15px 15px 0px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-right: 24px;
 }
 
 /*filtre*/
@@ -597,7 +594,6 @@ nav a{
     width: 22.4px;
     height: 22.4px;
     padding: 15.52px;
-    margin-top: 16px;
     background-color: #f2f2f2;
     border-radius: 10px 0px 0px 10px;
 }
@@ -617,18 +613,16 @@ input{
     font-family: 'medium';
 }
 
-#back_desktop{
-    background-color:#0065FC;
-    height: 52.8px;
-    margin-top: 16px;
-    padding-right: 24px;    
-    border-radius: 0px 15px 15px 0px;
-}
-
 label{
     font-family: 'medium';
     padding-left: 16px;
     color: white;
+    background-color:#0065FC;
+    border-radius: 0px 15px 15px 0px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-right: 24px;
 }
 
 /*filtre*/
