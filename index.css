@@ -40,7 +40,7 @@ h1{
 
 h2{
     font-family: 'bold';
-    font-size: 20px;
+    font-size: 22px;
 }
 
 h3{
@@ -57,6 +57,10 @@ p{
     font-family: 'regular';
 }
 
+a{
+    font-family: 'medium';
+    font-size: 18px;
+}
 
 /*media queries desktop*/
 
@@ -253,7 +257,7 @@ label{
 
 /*hébergement + les plus populaires*/
 
-section{
+main{
     display: flex;
     justify-content: space-between;
 }
@@ -274,7 +278,7 @@ section{
     display: none;
 }
 
-article h2, #texte{
+article h3, #texte{
     margin-left: 40px;
 }
 
@@ -690,9 +694,9 @@ label{
     padding-right: 24px;
 }
 
-/*section*/
+/*main*/
 
-section{
+main{
     display: flex;
     flex-wrap: wrap-reverse;
 }
@@ -1147,7 +1151,7 @@ input{
 
 /*arrière plan pour hébergement à marseille*/
 
-section{
+main{
     display: flex;
     flex-direction: column-reverse;
     margin-bottom: 35px;
