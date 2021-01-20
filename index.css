@@ -138,17 +138,24 @@ nav a:hover{
     display: none;
 }
 
-#map_marker_desktop{
-    width: 1.4em;
-    height: 1.4em;
-    padding: 15.52px;
+#div_map_marker{
+    width: 50px;
+    height: 50px;
     background-color: #f2f2f2;
     border-radius: 10px 0px 0px 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#map_marker_desktop{
+    width: 15px;
+    height: 20px;
 }
 
 #recherche_desktop{
     width: 20em;
-    height: 4em;
+    height: 50px;
     padding: 5px;
     padding-left: 20px;
     outline: none;
@@ -157,20 +164,19 @@ nav a:hover{
 }
 
 input{
-    height: 2.77em;
     font-family: 'medium';
 }
 
 label{
+    width: 135px;
+    height: 50px;
     font-family: 'medium';
-    padding-left: 16px;
     color: white;
     background-color:#0065FC;
     border-radius: 0px 15px 15px 0px;
     display: flex;
     align-items: center;
     justify-content: center;
-    padding-right: 24px;
 }
 
 /*filtre*/
@@ -989,6 +995,7 @@ p{
 #nav_telephone_bottom{
     width: 100%;
     margin-top: 30px;
+    color: #0065FC;
 }
 
 #nav_telephone_inscrire{
@@ -1032,41 +1039,51 @@ nav a{
 
 #bouton_recherche_téléphone{
     display: flex;
-    margin-top: 25.6px;
+    margin-top: 40px;
 }
 
-#map_marker_telephone{
-    width: 21.6px;
-    height: 21.6px;
-    padding: 9.6px;
-    margin-top: 15px;
+#div_map_marker_telephone{
+    width: 50px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     background-color: #f2f2f2;
     border-radius: 10px 0px 0px 10px;
 }
 
+#map_marker_telephone{
+    width: 15px;
+    height: 20px;
+}
+
 #recherche_telephone{
     width: 80%;
-    height: 3em;
+    height: 50px;
     padding: 5px;
     outline: none;
     border: 3.2px solid  #f2f2f2;
     border-right: none;
-    margin-top: 15px;
 }
 
 input{
-    height: 2.6em;
     font-family: 'medium';
 }
 
-#loupe{
-    width: 1.35em;
-    height: 1.35em;
-    padding: 9.6px;
-    margin-top: 15px;
+#div_loupe_telephone{
+    width: 50px;
+    height: 50px;
     background-color:  #0065fc;
-    color: white;
     border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#loupe{
+    width: 20px;
+    height: 20px;
+    color: white;
 }
 
 /*en-tête*/
@@ -1244,8 +1261,8 @@ main{
 }
 
 .imgs_populaire{
-    width: 9.125em;
-    height: 9.375em;
+    width: 146px;
+    height: 150px;
     border-radius: 20px 0px 0px 20px;
     border-left: 9px white solid;
     border-bottom: 9px white solid;
@@ -1256,7 +1273,7 @@ main{
 .banniere_populaire
 {
     width: 80%;
-    height: 10.5em;
+    height: 168px;
     background-color: white;
     color:black;
     border-radius: 0px 20px 20px 0px; 
