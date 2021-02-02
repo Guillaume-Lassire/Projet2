@@ -589,46 +589,52 @@ nav a{
 
 #bouton_recherche_desktop{
     display: flex;
-    margin-top: 32px;
+    margin-top: 48px;
 }
 
 #bouton_recherche_téléphone{
     display: none;
 }
 
-#map_marker_desktop{
-    width: 22.4px;
-    height: 22.4px;
-    padding: 15.52px;
+#div_map_marker{
+    width: 50px;
+    height: 50px;
     background-color: #f2f2f2;
     border-radius: 10px 0px 0px 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#map_marker_desktop{
+    width: 15px;
+    height: 20px;
 }
 
 #recherche_desktop{
-    width: 320px;
-    height: 54px;
+    width: 20em;
+    height: 50px;
     padding: 5px;
     padding-left: 20px;
     outline: none;
-    border: 3.2px solid  #f2f2f2;
+    border: 0.2em solid  #f2f2f2;
     border-right: none;
 }
 
 input{
-    height: 44.32px;
     font-family: 'medium';
 }
 
 label{
+    width: 135px;
+    height: 50px;
     font-family: 'medium';
-    padding-left: 16px;
     color: white;
     background-color:#0065FC;
     border-radius: 0px 15px 15px 0px;
     display: flex;
     align-items: center;
     justify-content: center;
-    padding-right: 24px;
 }
 
 /*filtre*/
