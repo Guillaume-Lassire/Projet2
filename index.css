@@ -72,7 +72,7 @@ nav li{
 }
 nav a{
     font-size: 1.3em;
-    color: grey;
+    color: #1f1f1f;
     padding-top: 44px;
     padding-right: 16px;
     padding-left: 16px;
@@ -442,7 +442,7 @@ nav li{
 }
 nav a{
     font-size: 20.8px;
-    color: #0065FC;
+    color: #1f1f1f;
     padding-top: 33.6px;
     text-decoration: none;
 }
@@ -790,10 +790,10 @@ p{
 #nav_telephone_activite, #nav_telephone_hebergement{
     padding-bottom: 10px;
     border-bottom: 5px solid #f2f2f2;
+    color: #1f1f1f;
 }
 nav a{
     font-size: 20.8px;
-    color: #0065FC;
     text-decoration: none;
 }
 #nav_telephone_hebergement:hover, #nav_telephone_activite:hover{
