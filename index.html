@@ -3,7 +3,7 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="index.css"/>
+        <link rel="stylesheet" href="test.css"/>
         <title>Reservia</title>
     </head>
     <body>
@@ -12,7 +12,7 @@
                 <img class="reservia" src="Projet2-Reservia/images/logo/Reservia@3x.png" alt="">
                 <nav>
                     <ul>
-                        <li><a href="#article_desktop">Hébergements</a></li>
+                        <li><a href="#ancre_hebergement">Hébergements</a></li>
                         <li><a href="#ancre_activite">Activités</a></li>
                         <li><a href="" id="inscrire">S'inscrire</a></li>
                     </ul>
@@ -25,7 +25,7 @@
                     <a href="" id="nav_telephone_inscrire">S'inscrire</a>
                 </div>
                 <div id="nav_telephone_bottom">
-                    <a href="#article" id="nav_telephone_hebergement">Hébergements</a>
+                    <a href="#ancre_hebergement" id="nav_telephone_hebergement">Hébergements</a>
                     <a href="#ancre_activite" id="nav_telephone_activite">Activités</a>
                 </div>
             </div>
@@ -35,63 +35,34 @@
             <h1>Trouvez votre hébergement pour des vacances de rêve</h1>
             <p id="acceuil">En plein centre ville ou en pleine nature</p>
 
-            <form id="bouton_recherche_desktop" method="post" action="projet2.php">
-                <div id="div_map_marker"><svg id="map_marker_desktop" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="map-marker-alt" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512"><path fill="currentColor" d="M172.268 501.67C26.97 291.031 0 269.413 0 192 0 85.961 85.961 0 192 0s192 85.961 192 192c0 77.413-26.97 99.031-172.268 309.67-9.535 13.774-29.93 13.773-39.464 0zM192 272c44.183 0 80-35.817 80-80s-35.817-80-80-80-80 35.817-80 80 35.817 80 80 80z"></path></svg></div>
-                <input type="search" name="recherche" id="recherche_desktop" maxlength="100" placeholder="Marseille, France" />
-                <label for="recherche_desktop">Recherche</label>
+            <form id="bouton_recherche" method="post" action="projet2.php">
+                <div id="div_map_marker"><svg id="map_marker" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="map-marker-alt" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512"><path fill="currentColor" d="M172.268 501.67C26.97 291.031 0 269.413 0 192 0 85.961 85.961 0 192 0s192 85.961 192 192c0 77.413-26.97 99.031-172.268 309.67-9.535 13.774-29.93 13.773-39.464 0zM192 272c44.183 0 80-35.817 80-80s-35.817-80-80-80-80 35.817-80 80 35.817 80 80 80z"></path></svg></div>
+                <input type="search" name="recherche" id="recherche" maxlength="100" placeholder="Marseille, France" />
+                <label for="recherche">Recherche</label>
+                <div id="loupe_telephone"><svg id="loupe" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="search"  role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="currentColor" d="M505 442.7L405.3 343c-4.5-4.5-10.6-7-17-7H372c27.6-35.3 44-79.7 44-128C416 93.1 322.9 0 208 0S0 93.1 0 208s93.1 208 208 208c48.3 0 92.7-16.4 128-44v16.3c0 6.4 2.5 12.5 7 17l99.7 99.7c9.4 9.4 24.6 9.4 33.9 0l28.3-28.3c9.4-9.4 9.4-24.6.1-34zM208 336c-70.7 0-128-57.2-128-128 0-70.7 57.2-128 128-128 70.7 0 128 57.2 128 128 0 70.7-57.2 128-128 128z"></path></svg></div>
             </form>
 
-            <form id="bouton_recherche_téléphone" method="post" action="projet2.php">
-                <div id="div_map_marker_telephone"><svg id="map_marker_telephone" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="map-marker-alt" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512"><path fill="currentColor" d="M172.268 501.67C26.97 291.031 0 269.413 0 192 0 85.961 85.961 0 192 0s192 85.961 192 192c0 77.413-26.97 99.031-172.268 309.67-9.535 13.774-29.93 13.773-39.464 0zM192 272c44.183 0 80-35.817 80-80s-35.817-80-80-80-80 35.817-80 80 35.817 80 80 80z"></path></svg></div>
-                <input type="search" name="recherche" id="recherche_telephone" size="20" maxlength="100" placeholder="Marseille, France" />
-                <div id="div_loupe_telephone"><svg id="loupe" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="search"  role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="currentColor" d="M505 442.7L405.3 343c-4.5-4.5-10.6-7-17-7H372c27.6-35.3 44-79.7 44-128C416 93.1 322.9 0 208 0S0 93.1 0 208s93.1 208 208 208c48.3 0 92.7-16.4 128-44v16.3c0 6.4 2.5 12.5 7 17l99.7 99.7c9.4 9.4 24.6 9.4 33.9 0l28.3-28.3c9.4-9.4 9.4-24.6.1-34zM208 336c-70.7 0-128-57.2-128-128 0-70.7 57.2-128 128-128 70.7 0 128 57.2 128 128 0 70.7-57.2 128-128 128z"></path></svg></div>
-            </form>
-
-            <div id="filtre_desktop">
-                <h2 id="titre_filtre_desktop">Filtres</h2>
-
-                <div class="aide">
-                    <svg class="svg" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="money-bill-wave" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512"><path fill="currentColor" d="M621.16 54.46C582.37 38.19 543.55 32 504.75 32c-123.17-.01-246.33 62.34-369.5 62.34-30.89 0-61.76-3.92-92.65-13.72-3.47-1.1-6.95-1.62-10.35-1.62C15.04 79 0 92.32 0 110.81v317.26c0 12.63 7.23 24.6 18.84 29.46C57.63 473.81 96.45 480 135.25 480c123.17 0 246.34-62.35 369.51-62.35 30.89 0 61.76 3.92 92.65 13.72 3.47 1.1 6.95 1.62 10.35 1.62 17.21 0 32.25-13.32 32.25-31.81V83.93c-.01-12.64-7.24-24.6-18.85-29.47zM48 132.22c20.12 5.04 41.12 7.57 62.72 8.93C104.84 170.54 79 192.69 48 192.69v-60.47zm0 285v-47.78c34.37 0 62.18 27.27 63.71 61.4-22.53-1.81-43.59-6.31-63.71-13.62zM320 352c-44.19 0-80-42.99-80-96 0-53.02 35.82-96 80-96s80 42.98 80 96c0 53.03-35.83 96-80 96zm272 27.78c-17.52-4.39-35.71-6.85-54.32-8.44 5.87-26.08 27.5-45.88 54.32-49.28v57.72zm0-236.11c-30.89-3.91-54.86-29.7-55.81-61.55 19.54 2.17 38.09 6.23 55.81 12.66v48.89z"></path></svg>
-                    <h2 class="ecriture">Économique</h2>
-                </div>
-
-                <div class="aide">
-                    <svg class="svg" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="child" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512"><path fill="currentColor" d="M120 72c0-39.765 32.235-72 72-72s72 32.235 72 72c0 39.764-32.235 72-72 72s-72-32.236-72-72zm254.627 1.373c-12.496-12.497-32.758-12.497-45.254 0L242.745 160H141.254L54.627 73.373c-12.496-12.497-32.758-12.497-45.254 0-12.497 12.497-12.497 32.758 0 45.255L104 213.254V480c0 17.673 14.327 32 32 32h16c17.673 0 32-14.327 32-32V368h16v112c0 17.673 14.327 32 32 32h16c17.673 0 32-14.327 32-32V213.254l94.627-94.627c12.497-12.497 12.497-32.757 0-45.254z"></path></svg>
-                    <h2 class="ecriture">Familial</h2>
-                </div>
-
-                <div class="aide">
-                    <svg class="svg" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="heart" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="currentColor" d="M462.3 62.6C407.5 15.9 326 24.3 275.7 76.2L256 96.5l-19.7-20.3C186.1 24.3 104.5 15.9 49.7 62.6c-62.8 53.6-66.1 149.8-9.9 207.9l193.5 199.8c12.5 12.9 32.8 12.9 45.3 0l193.5-199.8c56.3-58.1 53-154.3-9.8-207.9z"></path></svg>
-                    <h2 class="ecriture">Romantique</h2>
-                </div>
-
-                <div id="aide_desktop">
-                    <svg class="svg" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="dog" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><path fill="currentColor" d="M298.06,224,448,277.55V496a16,16,0,0,1-16,16H368a16,16,0,0,1-16-16V384H192V496a16,16,0,0,1-16,16H112a16,16,0,0,1-16-16V282.09C58.84,268.84,32,233.66,32,192a32,32,0,0,1,64,0,32.06,32.06,0,0,0,32,32ZM544,112v32a64,64,0,0,1-64,64H448v35.58L320,197.87V48c0-14.25,17.22-21.39,27.31-11.31L374.59,64h53.63c10.91,0,23.75,7.92,28.62,17.69L464,96h64A16,16,0,0,1,544,112Zm-112,0a16,16,0,1,0-16,16A16,16,0,0,0,432,112Z"></path></svg>
-                    <h2 class="ecriture">Animaux autorisés</h2>
-                </div>
-            </div>
-
-            <div id="filtre_telephone">
-                <h2>Filtres</h2>
-
-                <div id="icone_filtre">
-                    <div class="aide">
-                        <svg class="svg" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="money-bill-wave" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512"><path fill="currentColor" d="M621.16 54.46C582.37 38.19 543.55 32 504.75 32c-123.17-.01-246.33 62.34-369.5 62.34-30.89 0-61.76-3.92-92.65-13.72-3.47-1.1-6.95-1.62-10.35-1.62C15.04 79 0 92.32 0 110.81v317.26c0 12.63 7.23 24.6 18.84 29.46C57.63 473.81 96.45 480 135.25 480c123.17 0 246.34-62.35 369.51-62.35 30.89 0 61.76 3.92 92.65 13.72 3.47 1.1 6.95 1.62 10.35 1.62 17.21 0 32.25-13.32 32.25-31.81V83.93c-.01-12.64-7.24-24.6-18.85-29.47zM48 132.22c20.12 5.04 41.12 7.57 62.72 8.93C104.84 170.54 79 192.69 48 192.69v-60.47zm0 285v-47.78c34.37 0 62.18 27.27 63.71 61.4-22.53-1.81-43.59-6.31-63.71-13.62zM320 352c-44.19 0-80-42.99-80-96 0-53.02 35.82-96 80-96s80 42.98 80 96c0 53.03-35.83 96-80 96zm272 27.78c-17.52-4.39-35.71-6.85-54.32-8.44 5.87-26.08 27.5-45.88 54.32-49.28v57.72zm0-236.11c-30.89-3.91-54.86-29.7-55.81-61.55 19.54 2.17 38.09 6.23 55.81 12.66v48.89z"></path></svg>
+            <div id="filtre">
+                <h2 id="titre_filtres">Filtres</h2>
+                
+                <div id="test">
+                    <div class="bouton_filtre">
+                        <div class="background_icone_filtre"><svg class="icone_filtre" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="money-bill-wave" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512"><path fill="currentColor" d="M621.16 54.46C582.37 38.19 543.55 32 504.75 32c-123.17-.01-246.33 62.34-369.5 62.34-30.89 0-61.76-3.92-92.65-13.72-3.47-1.1-6.95-1.62-10.35-1.62C15.04 79 0 92.32 0 110.81v317.26c0 12.63 7.23 24.6 18.84 29.46C57.63 473.81 96.45 480 135.25 480c123.17 0 246.34-62.35 369.51-62.35 30.89 0 61.76 3.92 92.65 13.72 3.47 1.1 6.95 1.62 10.35 1.62 17.21 0 32.25-13.32 32.25-31.81V83.93c-.01-12.64-7.24-24.6-18.85-29.47zM48 132.22c20.12 5.04 41.12 7.57 62.72 8.93C104.84 170.54 79 192.69 48 192.69v-60.47zm0 285v-47.78c34.37 0 62.18 27.27 63.71 61.4-22.53-1.81-43.59-6.31-63.71-13.62zM320 352c-44.19 0-80-42.99-80-96 0-53.02 35.82-96 80-96s80 42.98 80 96c0 53.03-35.83 96-80 96zm272 27.78c-17.52-4.39-35.71-6.85-54.32-8.44 5.87-26.08 27.5-45.88 54.32-49.28v57.72zm0-236.11c-30.89-3.91-54.86-29.7-55.81-61.55 19.54 2.17 38.09 6.23 55.81 12.66v48.89z"></path></svg></div>
                         <h2 class="ecriture">Économique</h2>
                     </div>
 
-                    <div id="aide_telephone">
-                        <svg class="svg" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="child" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512"><path fill="currentColor" d="M120 72c0-39.765 32.235-72 72-72s72 32.235 72 72c0 39.764-32.235 72-72 72s-72-32.236-72-72zm254.627 1.373c-12.496-12.497-32.758-12.497-45.254 0L242.745 160H141.254L54.627 73.373c-12.496-12.497-32.758-12.497-45.254 0-12.497 12.497-12.497 32.758 0 45.255L104 213.254V480c0 17.673 14.327 32 32 32h16c17.673 0 32-14.327 32-32V368h16v112c0 17.673 14.327 32 32 32h16c17.673 0 32-14.327 32-32V213.254l94.627-94.627c12.497-12.497 12.497-32.757 0-45.254z"></path></svg>
+                    <div class="bouton_filtre">
+                        <div class="background_icone_filtre"><svg class="icone_filtre" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="child" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512"><path fill="currentColor" d="M120 72c0-39.765 32.235-72 72-72s72 32.235 72 72c0 39.764-32.235 72-72 72s-72-32.236-72-72zm254.627 1.373c-12.496-12.497-32.758-12.497-45.254 0L242.745 160H141.254L54.627 73.373c-12.496-12.497-32.758-12.497-45.254 0-12.497 12.497-12.497 32.758 0 45.255L104 213.254V480c0 17.673 14.327 32 32 32h16c17.673 0 32-14.327 32-32V368h16v112c0 17.673 14.327 32 32 32h16c17.673 0 32-14.327 32-32V213.254l94.627-94.627c12.497-12.497 12.497-32.757 0-45.254z"></path></svg></div>
                         <h2 class="ecriture">Familial</h2>
                     </div>
 
-                    <div class="aide">
-                        <svg class="svg" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="heart" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="currentColor" d="M462.3 62.6C407.5 15.9 326 24.3 275.7 76.2L256 96.5l-19.7-20.3C186.1 24.3 104.5 15.9 49.7 62.6c-62.8 53.6-66.1 149.8-9.9 207.9l193.5 199.8c12.5 12.9 32.8 12.9 45.3 0l193.5-199.8c56.3-58.1 53-154.3-9.8-207.9z"></path></svg>
+                    <div class="bouton_filtre">
+                        <div class="background_icone_filtre"><svg class="icone_filtre" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="heart" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="currentColor" d="M462.3 62.6C407.5 15.9 326 24.3 275.7 76.2L256 96.5l-19.7-20.3C186.1 24.3 104.5 15.9 49.7 62.6c-62.8 53.6-66.1 149.8-9.9 207.9l193.5 199.8c12.5 12.9 32.8 12.9 45.3 0l193.5-199.8c56.3-58.1 53-154.3-9.8-207.9z"></path></svg></div>
                         <h2 class="ecriture">Romantique</h2>
                     </div>
 
-                    <div class="aide">
-                        <svg class="svg" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="dog" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><path fill="currentColor" d="M298.06,224,448,277.55V496a16,16,0,0,1-16,16H368a16,16,0,0,1-16-16V384H192V496a16,16,0,0,1-16,16H112a16,16,0,0,1-16-16V282.09C58.84,268.84,32,233.66,32,192a32,32,0,0,1,64,0,32.06,32.06,0,0,0,32,32ZM544,112v32a64,64,0,0,1-64,64H448v35.58L320,197.87V48c0-14.25,17.22-21.39,27.31-11.31L374.59,64h53.63c10.91,0,23.75,7.92,28.62,17.69L464,96h64A16,16,0,0,1,544,112Zm-112,0a16,16,0,1,0-16,16A16,16,0,0,0,432,112Z"></path></svg>
+                    <div class="bouton_filtre">
+                        <div class="background_icone_filtre"><svg class="icone_filtre" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="dog" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><path fill="currentColor" d="M298.06,224,448,277.55V496a16,16,0,0,1-16,16H368a16,16,0,0,1-16-16V384H192V496a16,16,0,0,1-16,16H112a16,16,0,0,1-16-16V282.09C58.84,268.84,32,233.66,32,192a32,32,0,0,1,64,0,32.06,32.06,0,0,0,32,32ZM544,112v32a64,64,0,0,1-64,64H448v35.58L320,197.87V48c0-14.25,17.22-21.39,27.31-11.31L374.59,64h53.63c10.91,0,23.75,7.92,28.62,17.69L464,96h64A16,16,0,0,1,544,112Zm-112,0a16,16,0,1,0-16,16A16,16,0,0,0,432,112Z"></path></svg></div>
                         <h2 class="ecriture">Animaux autorisés</h2>
                     </div>
                 </div>
@@ -104,13 +75,13 @@
 
         </article> 
         <main>
-            <article id="article_desktop">
-                <div id="hebergements_desktop">
-                    <h3 class="titre_telephone">Hébergements à Marseille</h3>
+            <article id="article_hebergement">
+                <div id="hebergements_a_marseille">
+                    <h3 class="titre_article" id="ancre_hebergement">Hébergements à Marseille</h3>
 
-                    <div id="haut">
+                    <div id="image_hebergement_du_haut">
 
-                         <div class="ecart_haut">
+                         <div class="image_en_haut">
                             <a href=""><img class="imgs" src="Projet2-Reservia/images/hebergements/4_small/marcus-loke-WQJvWU_HZFo-unsplash.jpg" alt="">
                             <div class="banniere">
                                 <h4>Auberge de la Cannebière</h4>
@@ -125,7 +96,7 @@
                             </div></a>
                         </div>
 
-                        <div class="ecart_haut">
+                        <div class="image_en_haut">
                             <a href=""><img class="imgs" src="Projet2-Reservia/images/hebergements/4_small/fred-kleber-gTbaxaVLvsg-unsplash.jpg" alt="">
                             <div class="banniere">
                                 <h4>Hôtel du port</h4>
@@ -140,7 +111,7 @@
                             </div></a>
                         </div>
 
-                        <div class="ecart_haut">
+                        <div class="image_en_haut">
                             <a href=""><img class="imgs" src="Projet2-Reservia/images/hebergements/4_small/reisetopia-B8WIgxA_PFU-unsplash.jpg" alt="">
                             <div class="banniere">
                                 <h4>Hôtel Les mouettes</h4>
@@ -157,9 +128,9 @@
 
                     </div>
 
-                    <div id="bas">
+                    <div id="image_hebergement_du_bas">
 
-                        <div class="ecart_bas">
+                        <div class="image_en_bas">
                             <a href=""><img class="imgs" src="Projet2-Reservia/images/hebergements/4_small/annie-spratt-Eg1qcIitAuA-unsplash.jpg" alt="">
                             <div class="banniere">
                                 <h4>Hôtel de la mer</h4>
@@ -174,7 +145,7 @@
                             </div></a>
                         </div>
 
-                        <div class="ecart_bas">
+                        <div class="image_en_bas">
                             <a href=""><img class="imgs" src="Projet2-Reservia/images/hebergements/4_small/nicate-lee-kT-ZyaiwBe0-unsplash.jpg" alt="">
                             <div class="banniere">
                                 <h4>Auberge Le Panier</h4>
@@ -189,7 +160,7 @@
                             </div></a>
                         </div>
 
-                        <div class="ecart_bas">
+                        <div class="image_en_bas">
                             <a href=""><img class="imgs" src="Projet2-Reservia/images/hebergements/4_small/febrian-zakaria-M6S1WvfW68A-unsplash.jpg" alt="">
                             <div class="banniere">
                                 <h4>Hôtel chez Amina</h4>
@@ -209,113 +180,10 @@
                     <h3 id="texte">Afficher plus</h3>
                 </div>
             </article>
-            <article id="article_tablette">
-                <div id="hebergements_tablette">
-                    <h3 class="titre_tablette">Hébergement à Marseille</h3>
-
-                    <div id="haut_tablette">
-                         <div class="ecart_haut">
-                            <a href=""><img class="imgs" src="Projet2-Reservia/images/hebergements/4_small/marcus-loke-WQJvWU_HZFo-unsplash.jpg" alt="">
-                            <div class="banniere">
-                                <h4>Auberge de la Cannebière</h4>
-                                <p>Nuit à partir de <em>25€</em></p>
-                            </div>
-                            <div class="etoile">
-                                <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="star" class="blue_star" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><path fill="currentColor" d="M259.3 17.8L194 150.2 47.9 171.5c-26.2 3.8-36.7 36.1-17.7 54.6l105.7 103-25 145.5c-4.5 26.3 23.2 46 46.4 33.7L288 439.6l130.7 68.7c23.2 12.2 50.9-7.4 46.4-33.7l-25-145.5 105.7-103c19-18.5 8.5-50.8-17.7-54.6L382 150.2 316.7 17.8c-11.7-23.6-45.6-23.9-57.4 0z"></path></svg>
-                                <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="star" class="blue_star" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><path fill="currentColor" d="M259.3 17.8L194 150.2 47.9 171.5c-26.2 3.8-36.7 36.1-17.7 54.6l105.7 103-25 145.5c-4.5 26.3 23.2 46 46.4 33.7L288 439.6l130.7 68.7c23.2 12.2 50.9-7.4 46.4-33.7l-25-145.5 105.7-103c19-18.5 8.5-50.8-17.7-54.6L382 150.2 316.7 17.8c-11.7-23.6-45.6-23.9-57.4 0z"></path></svg>
-                                <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="star" class="blue_star" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><path fill="currentColor" d="M259.3 17.8L194 150.2 47.9 171.5c-26.2 3.8-36.7 36.1-17.7 54.6l105.7 103-25 145.5c-4.5 26.3 23.2 46 46.4 33.7L288 439.6l130.7 68.7c23.2 12.2 50.9-7.4 46.4-33.7l-25-145.5 105.7-103c19-18.5 8.5-50.8-17.7-54.6L382 150.2 316.7 17.8c-11.7-23.6-45.6-23.9-57.4 0z"></path></svg>
-                                <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="star" class="blue_star" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><path fill="currentColor" d="M259.3 17.8L194 150.2 47.9 171.5c-26.2 3.8-36.7 36.1-17.7 54.6l105.7 103-25 145.5c-4.5 26.3 23.2 46 46.4 33.7L288 439.6l130.7 68.7c23.2 12.2 50.9-7.4 46.4-33.7l-25-145.5 105.7-103c19-18.5 8.5-50.8-17.7-54.6L382 150.2 316.7 17.8c-11.7-23.6-45.6-23.9-57.4 0z"></path></svg>
-                                <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="star" class="star" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><path fill="currentColor" d="M259.3 17.8L194 150.2 47.9 171.5c-26.2 3.8-36.7 36.1-17.7 54.6l105.7 103-25 145.5c-4.5 26.3 23.2 46 46.4 33.7L288 439.6l130.7 68.7c23.2 12.2 50.9-7.4 46.4-33.7l-25-145.5 105.7-103c19-18.5 8.5-50.8-17.7-54.6L382 150.2 316.7 17.8c-11.7-23.6-45.6-23.9-57.4 0z"></path></svg>
-                            </div></a>
-                        </div>
-
-                        <div class="ecart_haut">
-                            <a href=""><img class="imgs" src="Projet2-Reservia/images/hebergements/4_small/fred-kleber-gTbaxaVLvsg-unsplash.jpg" alt="">
-                            <div class="banniere">
-                                <h4>Hôtel du port</h4>
-                                <p>Nuit à partir de <em>52€</em></p>
-                            </div>
-                            <div class="etoile">
-                                <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="star" class="blue_star" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><path fill="currentColor" d="M259.3 17.8L194 150.2 47.9 171.5c-26.2 3.8-36.7 36.1-17.7 54.6l105.7 103-25 145.5c-4.5 26.3 23.2 46 46.4 33.7L288 439.6l130.7 68.7c23.2 12.2 50.9-7.4 46.4-33.7l-25-145.5 105.7-103c19-18.5 8.5-50.8-17.7-54.6L382 150.2 316.7 17.8c-11.7-23.6-45.6-23.9-57.4 0z"></path></svg>
-                                <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="star" class="blue_star" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><path fill="currentColor" d="M259.3 17.8L194 150.2 47.9 171.5c-26.2 3.8-36.7 36.1-17.7 54.6l105.7 103-25 145.5c-4.5 26.3 23.2 46 46.4 33.7L288 439.6l130.7 68.7c23.2 12.2 50.9-7.4 46.4-33.7l-25-145.5 105.7-103c19-18.5 8.5-50.8-17.7-54.6L382 150.2 316.7 17.8c-11.7-23.6-45.6-23.9-57.4 0z"></path></svg>
-                                <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="star" class="blue_star" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><path fill="currentColor" d="M259.3 17.8L194 150.2 47.9 171.5c-26.2 3.8-36.7 36.1-17.7 54.6l105.7 103-25 145.5c-4.5 26.3 23.2 46 46.4 33.7L288 439.6l130.7 68.7c23.2 12.2 50.9-7.4 46.4-33.7l-25-145.5 105.7-103c19-18.5 8.5-50.8-17.7-54.6L382 150.2 316.7 17.8c-11.7-23.6-45.6-23.9-57.4 0z"></path></svg>
-                                <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="star" class="blue_star" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><path fill="currentColor" d="M259.3 17.8L194 150.2 47.9 171.5c-26.2 3.8-36.7 36.1-17.7 54.6l105.7 103-25 145.5c-4.5 26.3 23.2 46 46.4 33.7L288 439.6l130.7 68.7c23.2 12.2 50.9-7.4 46.4-33.7l-25-145.5 105.7-103c19-18.5 8.5-50.8-17.7-54.6L382 150.2 316.7 17.8c-11.7-23.6-45.6-23.9-57.4 0z"></path></svg>
-                                <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="star" class="blue_star" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><path fill="currentColor" d="M259.3 17.8L194 150.2 47.9 171.5c-26.2 3.8-36.7 36.1-17.7 54.6l105.7 103-25 145.5c-4.5 26.3 23.2 46 46.4 33.7L288 439.6l130.7 68.7c23.2 12.2 50.9-7.4 46.4-33.7l-25-145.5 105.7-103c19-18.5 8.5-50.8-17.7-54.6L382 150.2 316.7 17.8c-11.7-23.6-45.6-23.9-57.4 0z"></path></svg>
-                            </div></a>
-                        </div>
-                    </div>
-
-                    <div id="milieu">
-                        <div class="ecart_milieu">
-                            <a href=""><img class="imgs" src="Projet2-Reservia/images/hebergements/4_small/reisetopia-B8WIgxA_PFU-unsplash.jpg" alt="">
-                            <div class="banniere">
-                                <h4>Hôtel Les mouettes</h4>
-                                <p>Nuit à partir de <em>76€</em></p>
-                            </div>
-                            <div class="etoile">
-                                <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="star" class="blue_star" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><path fill="currentColor" d="M259.3 17.8L194 150.2 47.9 171.5c-26.2 3.8-36.7 36.1-17.7 54.6l105.7 103-25 145.5c-4.5 26.3 23.2 46 46.4 33.7L288 439.6l130.7 68.7c23.2 12.2 50.9-7.4 46.4-33.7l-25-145.5 105.7-103c19-18.5 8.5-50.8-17.7-54.6L382 150.2 316.7 17.8c-11.7-23.6-45.6-23.9-57.4 0z"></path></svg>
-                                <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="star" class="blue_star" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><path fill="currentColor" d="M259.3 17.8L194 150.2 47.9 171.5c-26.2 3.8-36.7 36.1-17.7 54.6l105.7 103-25 145.5c-4.5 26.3 23.2 46 46.4 33.7L288 439.6l130.7 68.7c23.2 12.2 50.9-7.4 46.4-33.7l-25-145.5 105.7-103c19-18.5 8.5-50.8-17.7-54.6L382 150.2 316.7 17.8c-11.7-23.6-45.6-23.9-57.4 0z"></path></svg>
-                                <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="star" class="blue_star" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><path fill="currentColor" d="M259.3 17.8L194 150.2 47.9 171.5c-26.2 3.8-36.7 36.1-17.7 54.6l105.7 103-25 145.5c-4.5 26.3 23.2 46 46.4 33.7L288 439.6l130.7 68.7c23.2 12.2 50.9-7.4 46.4-33.7l-25-145.5 105.7-103c19-18.5 8.5-50.8-17.7-54.6L382 150.2 316.7 17.8c-11.7-23.6-45.6-23.9-57.4 0z"></path></svg>
-                                <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="star" class="blue_star" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><path fill="currentColor" d="M259.3 17.8L194 150.2 47.9 171.5c-26.2 3.8-36.7 36.1-17.7 54.6l105.7 103-25 145.5c-4.5 26.3 23.2 46 46.4 33.7L288 439.6l130.7 68.7c23.2 12.2 50.9-7.4 46.4-33.7l-25-145.5 105.7-103c19-18.5 8.5-50.8-17.7-54.6L382 150.2 316.7 17.8c-11.7-23.6-45.6-23.9-57.4 0z"></path></svg>
-                                <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="star" class="star" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><path fill="currentColor" d="M259.3 17.8L194 150.2 47.9 171.5c-26.2 3.8-36.7 36.1-17.7 54.6l105.7 103-25 145.5c-4.5 26.3 23.2 46 46.4 33.7L288 439.6l130.7 68.7c23.2 12.2 50.9-7.4 46.4-33.7l-25-145.5 105.7-103c19-18.5 8.5-50.8-17.7-54.6L382 150.2 316.7 17.8c-11.7-23.6-45.6-23.9-57.4 0z"></path></svg>
-                            </div></a>
-                        </div>
-
-                        <div class="ecart_milieu">
-                            <a href=""><img class="imgs" src="Projet2-Reservia/images/hebergements/4_small/annie-spratt-Eg1qcIitAuA-unsplash.jpg" alt="">
-                            <div class="banniere">
-                                <h4>Auberge Le Panier</h4>
-                                <p>Nuit à partir de <em>23€</em></p>
-                            </div>
-                            <div class="etoile">
-                                <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="star" class="blue_star" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><path fill="currentColor" d="M259.3 17.8L194 150.2 47.9 171.5c-26.2 3.8-36.7 36.1-17.7 54.6l105.7 103-25 145.5c-4.5 26.3 23.2 46 46.4 33.7L288 439.6l130.7 68.7c23.2 12.2 50.9-7.4 46.4-33.7l-25-145.5 105.7-103c19-18.5 8.5-50.8-17.7-54.6L382 150.2 316.7 17.8c-11.7-23.6-45.6-23.9-57.4 0z"></path></svg>
-                                <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="star" class="blue_star" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><path fill="currentColor" d="M259.3 17.8L194 150.2 47.9 171.5c-26.2 3.8-36.7 36.1-17.7 54.6l105.7 103-25 145.5c-4.5 26.3 23.2 46 46.4 33.7L288 439.6l130.7 68.7c23.2 12.2 50.9-7.4 46.4-33.7l-25-145.5 105.7-103c19-18.5 8.5-50.8-17.7-54.6L382 150.2 316.7 17.8c-11.7-23.6-45.6-23.9-57.4 0z"></path></svg>
-                                <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="star" class="blue_star" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><path fill="currentColor" d="M259.3 17.8L194 150.2 47.9 171.5c-26.2 3.8-36.7 36.1-17.7 54.6l105.7 103-25 145.5c-4.5 26.3 23.2 46 46.4 33.7L288 439.6l130.7 68.7c23.2 12.2 50.9-7.4 46.4-33.7l-25-145.5 105.7-103c19-18.5 8.5-50.8-17.7-54.6L382 150.2 316.7 17.8c-11.7-23.6-45.6-23.9-57.4 0z"></path></svg>
-                                <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="star" class="star" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><path fill="currentColor" d="M259.3 17.8L194 150.2 47.9 171.5c-26.2 3.8-36.7 36.1-17.7 54.6l105.7 103-25 145.5c-4.5 26.3 23.2 46 46.4 33.7L288 439.6l130.7 68.7c23.2 12.2 50.9-7.4 46.4-33.7l-25-145.5 105.7-103c19-18.5 8.5-50.8-17.7-54.6L382 150.2 316.7 17.8c-11.7-23.6-45.6-23.9-57.4 0z"></path></svg>
-                                <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="star" class="star" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><path fill="currentColor" d="M259.3 17.8L194 150.2 47.9 171.5c-26.2 3.8-36.7 36.1-17.7 54.6l105.7 103-25 145.5c-4.5 26.3 23.2 46 46.4 33.7L288 439.6l130.7 68.7c23.2 12.2 50.9-7.4 46.4-33.7l-25-145.5 105.7-103c19-18.5 8.5-50.8-17.7-54.6L382 150.2 316.7 17.8c-11.7-23.6-45.6-23.9-57.4 0z"></path></svg>
-                            </div></a>
-                        </div>
-                    </div>
-                        
-                    <div id="bas_tablette">
-                        <div class="ecart_bas">
-                            <a href=""><img class="imgs" src="Projet2-Reservia/images/hebergements/4_small/nicate-lee-kT-ZyaiwBe0-unsplash.jpg" alt="">
-                            <div class="banniere">
-                                <h4>Hôtel de la mer</h4>
-                                <p>Nuit à partir de <em>46€</em></p>
-                            </div>
-                            <div class="etoile">
-                                <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="star" class="blue_star" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><path fill="currentColor" d="M259.3 17.8L194 150.2 47.9 171.5c-26.2 3.8-36.7 36.1-17.7 54.6l105.7 103-25 145.5c-4.5 26.3 23.2 46 46.4 33.7L288 439.6l130.7 68.7c23.2 12.2 50.9-7.4 46.4-33.7l-25-145.5 105.7-103c19-18.5 8.5-50.8-17.7-54.6L382 150.2 316.7 17.8c-11.7-23.6-45.6-23.9-57.4 0z"></path></svg>
-                                <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="star" class="blue_star" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><path fill="currentColor" d="M259.3 17.8L194 150.2 47.9 171.5c-26.2 3.8-36.7 36.1-17.7 54.6l105.7 103-25 145.5c-4.5 26.3 23.2 46 46.4 33.7L288 439.6l130.7 68.7c23.2 12.2 50.9-7.4 46.4-33.7l-25-145.5 105.7-103c19-18.5 8.5-50.8-17.7-54.6L382 150.2 316.7 17.8c-11.7-23.6-45.6-23.9-57.4 0z"></path></svg>
-                                <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="star" class="blue_star" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><path fill="currentColor" d="M259.3 17.8L194 150.2 47.9 171.5c-26.2 3.8-36.7 36.1-17.7 54.6l105.7 103-25 145.5c-4.5 26.3 23.2 46 46.4 33.7L288 439.6l130.7 68.7c23.2 12.2 50.9-7.4 46.4-33.7l-25-145.5 105.7-103c19-18.5 8.5-50.8-17.7-54.6L382 150.2 316.7 17.8c-11.7-23.6-45.6-23.9-57.4 0z"></path></svg>
-                                <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="star" class="blue_star" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><path fill="currentColor" d="M259.3 17.8L194 150.2 47.9 171.5c-26.2 3.8-36.7 36.1-17.7 54.6l105.7 103-25 145.5c-4.5 26.3 23.2 46 46.4 33.7L288 439.6l130.7 68.7c23.2 12.2 50.9-7.4 46.4-33.7l-25-145.5 105.7-103c19-18.5 8.5-50.8-17.7-54.6L382 150.2 316.7 17.8c-11.7-23.6-45.6-23.9-57.4 0z"></path></svg>
-                                <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="star" class="star" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><path fill="currentColor" d="M259.3 17.8L194 150.2 47.9 171.5c-26.2 3.8-36.7 36.1-17.7 54.6l105.7 103-25 145.5c-4.5 26.3 23.2 46 46.4 33.7L288 439.6l130.7 68.7c23.2 12.2 50.9-7.4 46.4-33.7l-25-145.5 105.7-103c19-18.5 8.5-50.8-17.7-54.6L382 150.2 316.7 17.8c-11.7-23.6-45.6-23.9-57.4 0z"></path></svg>
-                            </div></a>
-                        </div>
-
-                        <div class="ecart_bas">
-                            <a href=""><img class="imgs" src="Projet2-Reservia/images/hebergements/4_small/febrian-zakaria-M6S1WvfW68A-unsplash.jpg" alt="">
-                            <div class="banniere">
-                                <h4>Hôtel chez Amina</h4>
-                                <p>Nuit à partir de <em>96€</em></p>
-                            </div>
-                            <div class="etoile">
-                                <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="blue_star" class="blue_star" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><path fill="currentColor" d="M259.3 17.8L194 150.2 47.9 171.5c-26.2 3.8-36.7 36.1-17.7 54.6l105.7 103-25 145.5c-4.5 26.3 23.2 46 46.4 33.7L288 439.6l130.7 68.7c23.2 12.2 50.9-7.4 46.4-33.7l-25-145.5 105.7-103c19-18.5 8.5-50.8-17.7-54.6L382 150.2 316.7 17.8c-11.7-23.6-45.6-23.9-57.4 0z"></path></svg>
-                                <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="blue_star" class="blue_star" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><path fill="currentColor" d="M259.3 17.8L194 150.2 47.9 171.5c-26.2 3.8-36.7 36.1-17.7 54.6l105.7 103-25 145.5c-4.5 26.3 23.2 46 46.4 33.7L288 439.6l130.7 68.7c23.2 12.2 50.9-7.4 46.4-33.7l-25-145.5 105.7-103c19-18.5 8.5-50.8-17.7-54.6L382 150.2 316.7 17.8c-11.7-23.6-45.6-23.9-57.4 0z"></path></svg>
-                                <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="blue_star" class="blue_star" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><path fill="currentColor" d="M259.3 17.8L194 150.2 47.9 171.5c-26.2 3.8-36.7 36.1-17.7 54.6l105.7 103-25 145.5c-4.5 26.3 23.2 46 46.4 33.7L288 439.6l130.7 68.7c23.2 12.2 50.9-7.4 46.4-33.7l-25-145.5 105.7-103c19-18.5 8.5-50.8-17.7-54.6L382 150.2 316.7 17.8c-11.7-23.6-45.6-23.9-57.4 0z"></path></svg>
-                                <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="blue_star" class="blue_star" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><path fill="currentColor" d="M259.3 17.8L194 150.2 47.9 171.5c-26.2 3.8-36.7 36.1-17.7 54.6l105.7 103-25 145.5c-4.5 26.3 23.2 46 46.4 33.7L288 439.6l130.7 68.7c23.2 12.2 50.9-7.4 46.4-33.7l-25-145.5 105.7-103c19-18.5 8.5-50.8-17.7-54.6L382 150.2 316.7 17.8c-11.7-23.6-45.6-23.9-57.4 0z"></path></svg>
-                                <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="blue_star" class="blue_star" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><path fill="currentColor" d="M259.3 17.8L194 150.2 47.9 171.5c-26.2 3.8-36.7 36.1-17.7 54.6l105.7 103-25 145.5c-4.5 26.3 23.2 46 46.4 33.7L288 439.6l130.7 68.7c23.2 12.2 50.9-7.4 46.4-33.7l-25-145.5 105.7-103c19-18.5 8.5-50.8-17.7-54.6L382 150.2 316.7 17.8c-11.7-23.6-45.6-23.9-57.4 0z"></path></svg>
-                            </div></a>
-                        </div>
-                    </div>
-
-                    <h3 class="titre_tablette">Afficher plus</h3>
-                </div>
-            </article>
             <article id="aside">
 
                 <div id="populaire">
-                    <h3 class="titre_telephone">Les plus populaires</h3>
+                    <h3 class="titre_article">Les plus populaires</h3>
                     <svg id="chart" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="chart-line" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="currentColor" d="M496 384H64V80c0-8.84-7.16-16-16-16H16C7.16 64 0 71.16 0 80v336c0 17.67 14.33 32 32 32h464c8.84 0 16-7.16 16-16v-32c0-8.84-7.16-16-16-16zM464 96H345.94c-21.38 0-32.09 25.85-16.97 40.97l32.4 32.4L288 242.75l-73.37-73.37c-12.5-12.5-32.76-12.5-45.25 0l-68.69 68.69c-6.25 6.25-6.25 16.38 0 22.63l22.62 22.62c6.25 6.25 16.38 6.25 22.63 0L192 237.25l73.37 73.37c12.5 12.5 32.76 12.5 45.25 0l96-96 32.4 32.4c15.12 15.12 40.97 4.41 40.97-16.97V112c.01-8.84-7.15-16-15.99-16z"></path></svg>
                 </div>
 
@@ -348,7 +216,6 @@
                         </div></a>
                     </div>
                 </div>
-
                 <div class="div_populaire">
                     <a href=""><img class="imgs_populaire" src="Projet2-Reservia/images/hebergements/4_small/febrian-zakaria-sjvU0THccQA-unsplash.jpg" alt=""></a>
                     <div class="banniere_populaire"><a href="">
@@ -363,37 +230,30 @@
                         </div></a>
                     </div>
                 </div>
-
             </article>
         </main>
-        <h3 id="ancre_activite">Activités à Marseille</h3>
+        <h3 class="titre_article" id="ancre_activite">Activités à Marseille</h3>
         <article id="activite_marseille">
-
             <div id="grande_image_et_grande_banniere">
                 <a href=""><img id="grande_image" src="Projet2-Reservia/images/activites/3_medium/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg" alt="">
                 <div id="banniere_grande_image">
                     <h4>Vieux port</h4>
                 </div></a>
             </div>
-
-
-            <div class="div">
+            <div class="activite_marseille_flex">
                 <div class="moyenne_image_et_moyenne_banniere" id="div_moyenne">
                     <a href=""><img class="moyenne_image" src="Projet2-Reservia/images/activites/3_medium/paul-hermann-QFTrLdQIRhI-unsplash.jpg" alt="">
                     <div class="banniere_moyenne_image">
                         <h4>Fort de Pomègues</h4>
                     </div></a>
                 </div>
-
                 <div class="petite_image_et_petite_banniere">
                     <a href=""><img class="petite_image" src="Projet2-Reservia/images/activites/3_medium/kevin-hikari-rV_Qd1l-VXg-unsplash.jpg" alt="">
                     <div class="banniere_petite_image">
                         <h4>Îles du frioul</h4>
                     </div></a>
                 </div>
-
             </div>
-
             <div class="grande_image_et_grande_banniere">
                 <a href=""><img class="grande_image" src="Projet2-Reservia/images/activites/3_medium/kilyan-sockalingum-NR8-cBCN3aI-unsplash.jpg" alt="">
                 <div class="banniere_grande_image">
@@ -401,74 +261,20 @@
                 </div></a>
             </div>
 
-            <div class="div">
+            <div class="activite_marseille_flex">
                 <div class="petite_image_et_petite_banniere" id="div_petit">
                     <a href=""><img class="petite_image" src="Projet2-Reservia/images/activites/3_medium/florian-wehde-xW9e8gdotxI-unsplash.jpg" alt="">
                     <div class="banniere_petite_image">
                         <h4>Notre-Dame-de-la-Garde</h4>
                     </div></a>
                 </div>
-
                 <div class="moyenne_image_et_moyenne_banniere">
                     <a href=""><img class="moyenne_image" src="Projet2-Reservia/images/activites/3_medium/lena-paulin-wH2-EJoDcV0-unsplash.jpg" alt="">
                     <div class="banniere_moyenne_image">
                         <h4>Parc Longchamp</h4>
                     </div></a>
                 </div>
-
             </div>
-
-        </article>
-        <article id="activite_marseille_tablette">
-
-            <div class="grande_image_et_grande_banniere">
-                <a href=""><img class="grande_image" src="Projet2-Reservia/images/activites/3_medium/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg" alt="">
-                <div class="banniere_grande_image">
-                    <h4>Vieux port</h4>
-                </div></a>
-            </div>
-
-            <div class="activite_marseille_flex">
-                <div class="moyenne_image_et_moyenne_banniere">
-                    <a href=""><img class="moyenne_image" src="Projet2-Reservia/images/activites/3_medium/paul-hermann-QFTrLdQIRhI-unsplash.jpg" alt="">
-                    <div class="banniere_moyenne_image">
-                        <h4>Fort de Pomègues</h4>
-                    </div></a>
-                </div>
-
-                <div class="petite_image_et_petite_banniere">
-                    <a href=""><img class="petite_image" src="Projet2-Reservia/images/activites/3_medium/kevin-hikari-rV_Qd1l-VXg-unsplash.jpg" alt="">
-                    <div class="banniere_petite_image">
-                        <h4>Îles du frioul</h4>
-                    </div></a>
-                </div>
-
-            </div>
-
-            <div class="grande_image_et_grande_banniere">
-                <a href=""><img class="grande_image" src="Projet2-Reservia/images/activites/3_medium/kilyan-sockalingum-NR8-cBCN3aI-unsplash.jpg" alt="">
-                <div class="banniere_grande_image">
-                    <h4>Parc national des Calanques</h4>
-                </div></a>
-            </div>
-
-            <div class="activite_marseille_flex">
-                <div class="moyenne_image_et_moyenne_banniere">
-                    <a href=""><img class="moyenne_image" src="Projet2-Reservia/images/activites/3_medium/florian-wehde-xW9e8gdotxI-unsplash.jpg" alt="">
-                    <div class="banniere_moyenne_image">
-                        <h4>Fort de Pomègues</h4>
-                    </div></a>
-                </div>
-
-                <div class="petite_image_et_petite_banniere">
-                    <a href=""><img class="petite_image" src="Projet2-Reservia/images/activites/3_medium/lena-paulin-wH2-EJoDcV0-unsplash.jpg" alt="">
-                    <div class="banniere_petite_image">
-                        <h4>Îles du frioul</h4>
-                    </div></a>
-                </div>
-
-            </div>
-
         </article>
         <footer>   
             <div id="bas_de_page">
@@ -477,14 +283,12 @@
                     <a href=""><p>Fonctionnement du site</p></a>
                     <a href=""><p>Conditions générales de vente</p></a>
                     <a href=""><p>Données et confidentialité</p></a>
-                </div>
-    
+                </div>    
                 <div id="nos_hebergements">
                     <h4>Nos hébergements</h4>
                     <a href=""><p>Charte qualité</p></a>
                     <a href=""><p>Soumettre votre hôtel</p></a>
-                </div>
-                
+                </div>                
                 <div id="assistance">
                     <h4>Assistance</h4>
                     <a href=""><p>Centre d'aide</p></a>
