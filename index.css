@@ -757,49 +757,55 @@ p{
     width: 130px;
     height: 65px;
 }
-#nav_desktop{
-    display: none;
-}
 /*nav*/
-#nav_telephone_top, #nav_telephone_bottom{
-    display: flex;
-    justify-content: space-between;
-}
-#nav_telephone_top{
-    margin-left: 20px;
-    margin-right: 20px;
-}
-#nav_telephone_bottom{
+#nav_desktop{
     width: 100%;
-    margin-top: 30px;
-    color: #0065FC;
+    height: 135px;
+    margin-bottom: 50px;
 }
-#nav_telephone_inscrire{
-    color: #0065FC;
-    margin-top: 20px;
+.reservia{
+    position: relative;
+    left: 20px;
 }
-#nav_telephone_hebergement{
-    padding-left: 11.75%;
-    width: 38.25%;
-}
-#nav_telephone_activite{
-    width: 17.50%;
-    padding-left: 20.75%;
-    padding-right: 11.75%;
-}
-#nav_telephone_activite, #nav_telephone_hebergement{
-    padding-bottom: 10px;
+#background_hebergement, #background_activite{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+    height: 50px;
     border-bottom: 5px solid #f2f2f2;
-    color: #1f1f1f;
+}
+#background_hebergement:hover, #background_activite:hover{
+    border-bottom: 5px solid #0065FC;
+}
+#background_hebergement:hover #hebergement, #background_activite:hover #activite{
+    color: #0065FC;
+}
+#background_hebergement{
+    position: absolute;
+    top: 120px;
+    left: 0px;
+}
+#background_activite{
+    position: absolute;
+    top: 120px;
+    right: 0px;
+}
+#hebergement, #activite{
+    color: #202020;
+}
+#inscrire{
+    position: absolute;
+    top: 55px;
+    right: 20px;
+    color: #0065FC;
+}
+nav ul{
+    list-style-type: none;
 }
 nav a{
-    font-size: 20.8px;
+    font-size: 18px;
     text-decoration: none;
-}
-#nav_telephone_hebergement:hover, #nav_telephone_activite:hover{
-    color: #0065FC;
-    border-bottom: 5px solid #0065FC;
-    padding-bottom: 10px;
 }
 /*Bouton recherche*/
 #en_tete{
